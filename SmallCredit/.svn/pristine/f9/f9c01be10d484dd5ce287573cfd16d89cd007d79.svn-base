@@ -1,0 +1,144 @@
+package com.geo.smallcredit.activity;
+
+import net.tsz.afinal.FinalHttp;
+import net.tsz.afinal.http.AjaxCallBack;
+import net.tsz.afinal.http.AjaxParams;
+
+import com.geo.smallcredit.R;
+import com.geo.smallcredit.util.AppConfig;
+import com.geo.smallcredit.util.CommonUtil;
+import com.geo.smallcredit.util.PromptManager;
+import com.geo.smallcredit.util.ToastUtil;
+import com.geo.smallcredit.utils.net.InternetURL;
+import com.geo.smallcredit.vo.TimeButton;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class RegisterBindbankActivity extends Activity implements
+		OnClickListener {
+
+	private Button backBtn, finishBtn;
+	private EditText cardNumEdit, mobileEdit, verifyEdit;
+	private TextView type;
+	private TimeButton verifyBtn;
+	private Bundle savedInstanceState;
+	private LinearLayout mLine;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setContentView(R.layout.register_bind_bank);
+		initView();
+		initClick();
+	}
+
+	private void initClick() {
+		backBtn.setOnClickListener(this);
+		finishBtn.setOnClickListener(this);
+		verifyBtn.setOnClickListener(this);
+		mLine.setOnClickListener(this);
+	}
+
+	private void initView() {
+
+		backBtn = (Button) findViewById(R.id.register_bind_bank_backbtn);
+		finishBtn = (Button) findViewById(R.id.register_bind_bank_finishbtn);
+		cardNumEdit = (EditText) findViewById(R.id.register_bind_bank_banknum_edit);
+		mobileEdit = (EditText) findViewById(R.id.register_bind_bank_phone_edit);
+		verifyEdit = (EditText) findViewById(R.id.register_bind_bank_verify_edit);
+		type = (TextView) findViewById(R.id.register_bind_bank_banktype);
+		verifyBtn = (TimeButton) findViewById(R.id.register_bind_bank_sendverifybtn);
+		mLine=(LinearLayout) findViewById(R.id.traceroute_rootview);
+		
+	}
+
+	@Override
+	public void onClick(View v) {
+
+		String num = cardNumEdit.getText().toString().trim();
+		String phone = mobileEdit.getText().toString().trim();
+		String verify = verifyEdit.getText().toString().trim();
+
+		switch (v.getId()) {
+		case R.id.register_bind_bank_backbtn:
+			RegisterBindbankActivity.this.finish();
+			break;
+
+		case R.id.register_bind_bank_sendverifybtn:
+			int netWork = CommonUtil
+					.isNetworkAvailable(RegisterBindbankActivity.this);
+
+			if (netWork == 1 || netWork == 2 || netWork == 3) {
+
+				if ("".equalsIgnoreCase(phone) || phone == null) {
+
+					ToastUtil.show(this, "手机号不能为空");
+
+				} else if (phone.length() != 11) {
+
+					ToastUtil.show(RegisterBindbankActivity.this, "请输入11位的手机号");
+
+				} else {
+					// 该设置是获取验证码
+					verifyBtn.onCreate(savedInstanceState);
+					verifyBtn.setTextAfter("秒后重新获取").setTextBefore("获取")
+							.setLenght(60 * 1000);
+					AjaxParams params = new AjaxParams();
+					params.put("phone", phone);
+					params.put("code", "200");
+					params.put("imei",
+							AppConfig.getIMEI(RegisterBindbankActivity.this));
+					params.put("androidid", AppConfig
+							.getAndroidId(RegisterBindbankActivity.this));
+
+					FinalHttp fh = new FinalHttp();
+					fh.get(InternetURL.CHECKPHONE, params,
+							new AjaxCallBack<String>() {
+								@Override
+								public void onSuccess(String t) {
+									Toast.makeText(
+											RegisterBindbankActivity.this,
+											"验证码发送成功", Toast.LENGTH_SHORT)
+											.show();
+
+								}
+
+								@Override
+								public void onFailure(Throwable t, int errorNo,
+										String strMsg) {
+									Log.i("mytag", "验证码发送失败" + strMsg);
+									Toast.makeText(
+											RegisterBindbankActivity.this,
+											"验证码发送失败", Toast.LENGTH_SHORT)
+											.show();
+								}
+							});
+
+				}
+			} else {
+				PromptManager.showNoNetWork(RegisterBindbankActivity.this);
+			}
+			break;
+		case R.id.traceroute_rootview:
+			// 点击外部键盘消失
+			AppConfig.CloseKey(RegisterBindbankActivity.this, v);
+			break;
+
+		case R.id.register_bind_bank_finishbtn:
+
+			break;
+
+		}
+	}
+}

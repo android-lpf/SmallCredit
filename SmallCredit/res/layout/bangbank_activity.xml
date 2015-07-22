@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bangbank_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_up" >
+
+        <Button
+            android:id="@+id/bangbank_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/btn_general_back" />
+
+        <TextView
+            android:id="@+id/bangbank_backtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="29dip"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="绑定转入卡"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dip"
+        android:src="@drawable/progress_one" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+        <TextView
+            android:id="@+id/bangbank_tv11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dip"
+            android:text="绑定转入卡"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/bangbank_tv12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_toRightOf="@id/bangbank_tv11"
+            android:text="绑定还款卡"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/bangbank_tv13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dip"
+            android:layout_toRightOf="@id/bangbank_tv12"
+            android:text="确认"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bangbank_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/button_box_order_shape_white"
+        android:paddingBottom="15dip"
+        android:paddingLeft="20dip"
+        android:paddingTop="15dip" >
+
+        <TextView
+            android:id="@+id/bangbank_bankSp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:hint="选择转入银行卡"
+            android:inputType="text"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/bangbank_banknum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/bangbank_bankSp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/bangbank_bankSp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/bangbank_dataSp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/button_box_order_shape_white"
+        android:entries="@array/mouth"
+        android:paddingBottom="15dip"
+        android:paddingLeft="20dip"
+        android:paddingTop="15dip"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/bangbank_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/button_box_order_shape_white"
+        android:gravity="left"
+        android:hint="请输入还款金额"
+        android:inputType="number"
+        android:paddingBottom="15dip"
+        android:paddingLeft="25dip"
+        android:paddingTop="15dip"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:textCursorDrawable="@null"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/mysecurepayment_info_relative"
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="25dip"
+        android:paddingLeft="30dip" >
+
+        <CheckBox
+            android:id="@+id/mysecurepayment_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:text="同意"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/bangbank_xieyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/mysecurepayment_checkbox"
+            android:text="《新浪支付代扣支付服务协议》"
+            android:textColor="@color/actionsheet_blue"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bangbank_nextbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/start_round_sel"
+        android:gravity="center"
+        android:paddingBottom="15dip"
+        android:paddingTop="15dip"
+        android:text="下一步"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:gravity="left"
+        android:paddingLeft="15dip"
+        android:text="温馨提示:"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:lineSpacingExtra="2dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="为确保您能够及时还款,请确保转入日期至少比还款日期提前3个工作日"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/car_bankinfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_break_line"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_up" >
+
+        <Button
+            android:id="@+id/car_bankinfo_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/btn_general_back"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="银行卡信息"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/car_bankinfo_telbtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/phone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/my_break_line"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/traceroute_rootview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_break_line"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_group_break_line" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="\t还款卡(房贷还款卡)"
+                    android:textColor="@color/color_white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/my_break_line" >
+
+                <ImageButton
+                    android:id="@+id/car_bankinfo_addimgbtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/jia" 
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_group_break_line" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="\t工资卡(借记卡)"
+                    android:textColor="@color/color_white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_break_line" >
+
+                <TextView
+                    android:id="@+id/car_bankinfo_bankname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="银行"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/car_bankinfo_banknameedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@id/car_bankinfo_bankname"
+                    android:layout_alignBottom="@id/car_bankinfo_bankname"
+                    android:layout_toRightOf="@id/car_bankinfo_bankname"
+                    android:background="@null"
+                    android:ems="10"
+                    android:layout_marginLeft="6dp"
+                    android:maxLines="1"
+                    android:textColor="@color/color_white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/car_bankinfo_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/car_bankinfo_banknameedit"
+                    android:background="@drawable/my_group_break_line" />
+
+                <TextView
+                    android:id="@+id/car_bankinfo_banknume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/car_bankinfo_line"
+                    android:layout_toLeftOf="@id/car_bankinfo_banknameedit"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="卡号"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/car_bankinfo_banknumedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@id/car_bankinfo_banknume"
+                    android:layout_alignBottom="@id/car_bankinfo_banknume"
+                    android:layout_below="@id/car_bankinfo_line"
+                    android:layout_toRightOf="@id/car_bankinfo_banknume"
+                    android:background="@null"
+                    android:ems="10"
+                    android:layout_marginLeft="6dp"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="19"
+                    android:textColor="@color/color_white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/car_bankinfo_banknumedit"
+                    android:background="@drawable/my_group_break_line"
+                    android:paddingBottom="20dp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/car_bankinfo_savebtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="180dp"
+                android:background="@drawable/start_round_sel"
+                android:text="保存"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

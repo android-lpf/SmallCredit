@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/relative_order_break"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/mysecurepayment_transcation_item_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_group_break_line" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="交易类型(成功)"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mysecurepayment_transcation_item_dealtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="50dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="还款代扣"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mysecurepayment_transcation_item_dealflowtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/mysecurepayment_transcation_item_relative"
+        android:layout_marginLeft="30dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="交易流水"
+        android:textColor="@color/color_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mysecurepayment_transcation_item_dealflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/mysecurepayment_transcation_item_dealflowtxt"
+        android:layout_alignBottom="@id/mysecurepayment_transcation_item_dealflowtxt"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="20150601001004001"
+        android:textColor="@color/color_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mysecurepayment_transcation_item_dealpricetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mysecurepayment_transcation_item_dealflowtxt"
+        android:layout_below="@id/mysecurepayment_transcation_item_dealflowtxt"
+        android:paddingBottom="15dp"
+        android:text="交易金额"
+        android:textColor="@color/color_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mysecurepayment_transcation_item_dealprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mysecurepayment_transcation_item_dealflow"
+        android:layout_below="@id/mysecurepayment_transcation_item_dealflowtxt"
+        android:paddingBottom="15dp"
+        android:text="2560.00元"
+        android:textColor="@color/color_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mysecurepayment_transcation_item_dealtimetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mysecurepayment_transcation_item_dealpricetxt"
+        android:layout_below="@id/mysecurepayment_transcation_item_dealpricetxt"
+        android:paddingBottom="15dp"
+        android:text="交易时间"
+        android:textColor="@color/color_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mysecurepayment_transcation_item_dealtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/mysecurepayment_transcation_item_dealtimetxt"
+        android:layout_alignLeft="@id/mysecurepayment_transcation_item_dealprice"
+        android:paddingBottom="15dp"
+        android:maxLines="1"
+        android:text="2015-06-01 18:00:00"
+        android:textColor="@color/color_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mysecurepayment_transcation_item_payaccounttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mysecurepayment_transcation_item_dealtimetxt"
+        android:layout_below="@id/mysecurepayment_transcation_item_dealtimetxt"
+        android:paddingBottom="15dp"
+        android:text="付款帐号"
+        android:textColor="@color/color_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mysecurepayment_transcation_item_payaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/mysecurepayment_transcation_item_payaccounttxt"
+        android:layout_alignBottom="@id/mysecurepayment_transcation_item_payaccounttxt"
+        android:layout_alignLeft="@+id/mysecurepayment_transcation_item_dealtime"
+        android:paddingBottom="15dp"
+        android:text="6226 0010 4433 7788 012"
+        android:textColor="@color/color_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mysecurepayment_transcation_item_collectionaccounttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mysecurepayment_transcation_item_payaccounttxt"
+        android:layout_below="@id/mysecurepayment_transcation_item_payaccounttxt"
+        android:paddingBottom="15dp"
+        android:text="收款帐号"
+        android:textColor="@color/color_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mysecurepayment_transcation_item_collectionaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/mysecurepayment_transcation_item_collectionaccounttxt"
+        android:layout_alignBottom="@id/mysecurepayment_transcation_item_collectionaccounttxt"
+        android:layout_alignLeft="@id/mysecurepayment_transcation_item_payaccount"
+        android:paddingBottom="15dp"
+        android:text="6222 0000 1234"
+        android:textColor="@color/color_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mysecurepayment_transcation_item_beizhutxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/mysecurepayment_transcation_item_collectionaccounttxt"
+        android:layout_below="@id/mysecurepayment_transcation_item_collectionaccounttxt"
+        android:paddingBottom="15dp"
+        android:text="备注"
+        android:textColor="@color/color_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mysecurepayment_transcation_item_beizhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/mysecurepayment_transcation_item_beizhutxt"
+        android:layout_alignBottom="@id/mysecurepayment_transcation_item_beizhutxt"
+        android:layout_alignLeft="@id/mysecurepayment_transcation_item_collectionaccount"
+        android:textColor="@color/color_white"
+        android:textSize="12sp"
+        android:paddingBottom="15dp"
+         />
+
+</RelativeLayout>

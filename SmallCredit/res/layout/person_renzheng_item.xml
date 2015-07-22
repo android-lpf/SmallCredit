@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F2229"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2sp"
+        android:background="#21242B" >
+
+        <TextView
+            android:id="@+id/person_renzheng_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:paddingLeft="20dp"
+            android:text="身份认证"
+            android:textColor="@color/color_white"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/bullet_navi_current"
+            android:drawablePadding="5dp"
+             />
+
+        <ImageView
+            android:id="@+id/person_renzheng_frontbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/enter_arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

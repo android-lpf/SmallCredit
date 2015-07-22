@@ -1,0 +1,15 @@
+=\=\=\=\=\=\=
+<<<<<<<=.mine
+>>>>>>>=.r60
+eclipse.preferences.version=1
+encoding//src/com/geo/smallcredit/activity/HomeStartupActivity.java=UTF-8
+encoding//src/com/geo/smallcredit/adapter/MailAdapter.java=UTF-8
+encoding//src/com/geo/smallcredit/listviewgroup/interfaces/ItemClickedListener.java=UTF-8
+encoding//src/com/geo/smallcredit/listviewgroup/interfaces/ItemHeaderClickedListener.java=UTF-8
+encoding//src/com/geo/smallcredit/listviewgroup/view/MailListView.java=UTF-8
+encoding//src/com/geo/smallcredit/listviewgroup/view/WrapperView.java=UTF-8
+encoding//src/com/geo/smallcredit/util/BitmapUtil.java=UTF-8
+encoding//src/com/geo/smallcredit/util/MD5Util.java=UTF-8
+encoding//src/com/geo/smallcredit/util/SharedPreferencesUtils.java=UTF-8
+encoding//src/com/geo/smallcredit/util/ToastUtil.java=UTF-8
+encoding//src/com/geo/smallcredit/view/wheelview/WheelMain.java=UTF-8

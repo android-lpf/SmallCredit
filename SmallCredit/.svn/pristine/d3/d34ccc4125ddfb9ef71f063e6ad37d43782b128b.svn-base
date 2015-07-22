@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_break_line"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/item_host_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_up"
+        android:focusableInTouchMode="true" >
+
+        <Button
+            android:id="@+id/second_sure_btn_back_do"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_marginLeft="6dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_general_back"
+            android:gravity="center_vertical|center_horizontal" >
+        </Button>
+
+        <TextView
+            android:id="@+id/center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="实名认证"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@drawable/my_group_break_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/my_break_line"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/traceroute_rootview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/my_break_line"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/second_sure_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingBottom="25dp"
+                    android:paddingTop="25dp"
+                    android:text="真实姓名"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/second_sure_namedeit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@id/second_sure_name"
+                    android:layout_alignBottom="@id/second_sure_name"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@id/second_sure_name"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="请输入真实姓名"
+                    android:inputType="text"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:textColor="@color/color_white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/sure_person" />
+
+                <ImageView
+                    android:id="@+id/second_sure_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/second_sure_name"
+                    android:background="@drawable/my_group_break_line" />
+
+                <TextView
+                    android:id="@+id/second_sure_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/second_sure_name"
+                    android:layout_below="@id/second_sure_img"
+                    android:paddingBottom="25dp"
+                    android:paddingTop="25dp"
+                    android:text="身份证号"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/second_sure_numedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@id/second_sure_num"
+                    android:layout_alignBottom="@id/second_sure_num"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@id/second_sure_num"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="请输入身份证号"
+                    android:digits="1234567890qwertyuioplkjhgfdsazxcvbnm"
+                    android:maxLength="18"
+                    android:maxLines="1"
+                    android:textColor="@color/color_white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/second_sure_img"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/sure_zhengjian" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/second_sure_num"
+                    android:background="@drawable/my_group_break_line" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_round_sel"
+                android:text="立即认证"
+                android:layout_marginTop="220dp"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

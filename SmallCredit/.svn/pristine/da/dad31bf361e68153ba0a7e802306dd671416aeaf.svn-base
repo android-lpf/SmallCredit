@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myprogressselector_state"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_up" >
+
+        <Button
+            android:id="@+id/myprogressselector_state_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/btn_general_back" />
+
+        <TextView
+            android:id="@+id/myprogressselector_state_backtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="29dip"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="审批进度"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/myprogressselector_state_current"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/my_progressinfo_backgroud"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="\t\t当前流程"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/myprogressselector_state_current" >
+
+            <ImageView
+                android:id="@+id/myprogressselector_state_img1"
+                android:layout_width="15dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/my_progress_moren" />
+
+            <TextView
+                android:id="@+id/myprogressselector_state_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/myprogressselector_state_img1"
+                android:paddingBottom="3dp"
+                android:text="您的借款申请已提交成功！"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/myprogressselector_state_text1data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/myprogressselector_state_text1"
+                android:layout_toRightOf="@id/myprogressselector_state_img1"
+                android:paddingBottom="20dp"
+                android:text="2015-05-28"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/myprogressselector_state_text1time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/myprogressselector_state_text1"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/myprogressselector_state_text1data"
+                android:paddingBottom="30dp"
+                android:text="17:36:50"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/myprogressselector_state_img2"
+                android:layout_width="15dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/myprogressselector_state_img1"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/my_progress_moren" />
+
+            <TextView
+                android:id="@+id/myprogressselector_state_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/myprogressselector_state_text1"
+                android:layout_below="@id/myprogressselector_state_text1data"
+                android:layout_toRightOf="@id/myprogressselector_state_img2"
+                android:paddingBottom="3dp"
+                android:text="小信用的伙伴们已审核通过"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/myprogressselector_state_text2data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/myprogressselector_state_text2"
+                android:layout_below="@id/myprogressselector_state_text2"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@id/myprogressselector_state_img2"
+                android:paddingBottom="30dp"
+                android:text="2015-05-28"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/myprogressselector_state_text2time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/myprogressselector_state_text2"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/myprogressselector_state_text2data"
+                android:paddingBottom="30dp"
+                android:text="17:36:50"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/myprogressselector_state_img3"
+                android:layout_width="15dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/myprogressselector_state_img2"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/my_progress_moren" />
+
+            <TextView
+                android:id="@+id/myprogressselector_state_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/myprogressselector_state_text2"
+                android:layout_below="@id/myprogressselector_state_text2time"
+                android:layout_toRightOf="@id/myprogressselector_state_img3"
+                android:paddingBottom="40dp"
+                android:text="厚本金融最终审核中"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/myprogressselector_state_img4"
+                android:layout_width="15dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/myprogressselector_state_img3"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/my_progress_moren" />
+
+            <TextView
+                android:id="@+id/myprogressselector_state_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/myprogressselector_state_text3"
+                android:layout_below="@id/myprogressselector_state_text3"
+                android:layout_toRightOf="@id/myprogressselector_state_img4"
+                android:text="等待客户确认"
+                android:textColor="@color/actionsheet_gray"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

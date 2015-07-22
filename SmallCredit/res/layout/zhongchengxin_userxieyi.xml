@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_up" >
+
+        <Button
+            android:id="@+id/zhongchengxin_userxieyi_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/btn_general_back" />
+
+        <TextView
+            android:id="@+id/zhongchengxin_userxieyi_backtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="29dip"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="中诚信用户授权查询协议"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/background" >
+
+                <TextView
+                    android:id="@+id/zhongchengxin_userxieyi_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="个人信息查询授权书"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/zhongchengxin_userxieyi_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zhongchengxin_userxieyi_title"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="6dp"
+                    android:lineSpacingExtra="3dp"
+                    android:text="\t本人:                     "
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/zhongchengxin_userxieyi_shenfennum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zhongchengxin_userxieyi_title"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@id/zhongchengxin_userxieyi_name"
+                    android:text="(身份证号：                   )"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/zhongchengxin_userxieyi_txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zhongchengxin_userxieyi_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:lineSpacingExtra="3dp"
+                    android:text="\t授权  上海亲信互联网金融信息服务有限公司在进行、申请、享受相关业务或服务（从业务申请至业务终止），包括后续风险管理或提供的综合化服务等过程中，采集、处理、传递和应用本人资料及信息，包括但不限于通过中诚信征信有限公司个人信用信息基础数据库查询本人信用报告中的身份、职业和居住地址等个人基本信息，个人贷款、各类信用卡和对外担保等信用及商业活动中形成的交易记录，个人信贷交易信息及公共费用缴纳、违法违规信息及非银行类信息的其他信息等。\n\t本人同意将上述信息以及其他相关信用信息报送中诚信征信有限公司个人信用信息基础数据库，并同意中诚信征信服务有限公司可将本授权书提及到的一切信息向其他机构传递、提供并使用。"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zhongchengxin_userxieyi_txt2"
+                    android:layout_marginLeft="10dp"
+                    android:text="\t以上授权内容，本人已经充分理解并同意。  "
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

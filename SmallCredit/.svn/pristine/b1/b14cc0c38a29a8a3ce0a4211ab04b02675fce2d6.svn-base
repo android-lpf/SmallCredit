@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="splash_background">#ff0078bb</color>
+    <color name="highlight">#ff005599</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_white_half">#50ffff</color>
+    <color name="color_gray">#ffeeeeee</color>
+    <color name="color_gray2">#ffd0d0d0</color>
+    <color name="color_gray2_half">#50d0d0d0</color>
+    <color name="color_gray_chat">#ff888888</color>
+    <color name="color_red">#ffff0000</color>
+    <color name="color_hint">#ffc2c2c2</color>
+    <color name="color_blackgray">#ff939393</color>
+    <color name="color_blue">#ff3333ff</color>
+    <color name="color_blackgray_half">#b0555555</color>
+    <color name="color_black">#ff000000</color>
+    <color name="color_blacktxt">#ff323232</color>
+    <color name="color_miwhite">#c2c2c2</color>
+    <color name="color_gray_base">#fff0f0</color>
+    <color name="color_blue1">#1DA7FF</color>
+    <color name="color_black1">#323232</color>
+    <color name="color_ming">#00000000</color>
+    <color name="color_dangray">#F0F0F0</color>
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a0000</color>
+    <color name="crop__selector_focused">#770000</color>
+    <color name="color_selecor_back_yellow">#EEA91E</color>
+    <color name="color_checked_textcolor">#535A63</color>
+    <color name="color_selector_thirddaihuan_blue">#3F9DDA</color>
+    <color name="color_selector_third_more_black">#282B30</color>
+    <color name="color_selector_break">#242831</color>
+    <color name="color_selector_">#2D3039</color>
+    <color name="red">#B22222</color>
+    <color name="dark">#8B7355</color>
+    <color name="orange">#FFA500</color>
+    <color name="white">#FFFFFF</color>
+    <!-- 绿色 -->
+    <color name="green">#40E0D0</color>
+    <color name="trans">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="vifrification">#00000000</color>
+    <!-- 透明 -->
+
+    <color name="blue_up">#3686b9</color>
+    <color name="blue_down">#3f9dd9</color>
+    <color name="down_blue_up">#0a4971</color>
+    <color name="down_blue_down">#127bbe</color>
+    <color name="lv_up">#1f903a</color>
+    <color name="lv_down">#46bc62</color>
+    <color name="down_lv_up">#3ca053</color>
+    <color name="down_lv_down">#25a944</color>
+    <color name="zi_up">#777bbc</color>
+    <color name="zi_down">#8c91dd</color>
+    <color name="down_zi_up">#5b60b2</color>
+    <color name="down_zi_down">#6b71d1</color>
+    <color name="third_juse_up">#e95b37</color>
+    <color name="third_juse_down">#ec7355</color>
+    <color name="down_third_juse_up">#df5f3f</color>
+    <color name="down_third_juse_down">#d9431d</color>
+	<!--新版 -->
+	<color name="backgroud_title">#262a32</color>
+	<color name="backgroud_beijingse">#f1f2f2</color>
+	<color name="black_zitise">#2a2a2b</color>
+</resources>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mymouthpayment_planrela"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_break_line"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_up" >
+
+        <Button
+            android:id="@+id/mymouthpayment_plan_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/btn_general_back"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="还款计划"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/mymouthpayment_plan_telbtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/phone"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/my_break_line" >
+
+        <LinearLayout
+            android:id="@+id/traceroute_rootview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_break_line"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/mymouthpayment_plan_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="35dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="计划名称"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mymouthpayment_plan_nameedit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/mymouthpayment_plan_name"
+                    android:layout_alignBottom="@id/mymouthpayment_plan_name"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@id/mymouthpayment_plan_name"
+                    android:background="@null"
+                    android:textColor="@color/color_white"
+                    android:textSize="12sp" >
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/mymouthpayment_plan_nameedit"
+                    android:background="@drawable/my_group_break_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/mymouthpayment_plan_cardnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="还款卡号"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mymouthpayment_plan_cardnumedit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/mymouthpayment_plan_cardnum"
+                    android:layout_alignBottom="@id/mymouthpayment_plan_cardnum"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@id/mymouthpayment_plan_cardnum"
+                    android:maxLines="1"
+                    android:textColor="@color/color_white"
+                    android:textSize="12sp" >
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/mymouthpayment_plan_cardnumedit"
+                    android:background="@drawable/my_group_break_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/mymouthpayment_plan_bankname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="所属银行"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mymouthpayment_plan_banknameedit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/mymouthpayment_plan_bankname"
+                    android:layout_alignBottom="@id/mymouthpayment_plan_bankname"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@id/mymouthpayment_plan_bankname"
+                    android:maxLines="1"
+                    android:textColor="@color/color_white"
+                    android:textSize="12sp" >
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/mymouthpayment_plan_banknameedit"
+                    android:background="@drawable/my_group_break_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/mymouthpayment_plan_payprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="还款金额"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mymouthpayment_plan_paypriceedit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/mymouthpayment_plan_payprice"
+                    android:layout_alignBottom="@id/mymouthpayment_plan_payprice"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@id/mymouthpayment_plan_payprice"
+                    android:maxLines="1"
+                    android:textColor="@color/color_white"
+                    android:textSize="12sp" >
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/mymouthpayment_plan_paypriceedit"
+                    android:background="@drawable/my_group_break_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/mymouthpayment_plan_shijipaydata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="9dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="实际还款日期"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mymouthpayment_plan_shijipaydataedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@id/mymouthpayment_plan_shijipaydata"
+                    android:layout_alignBottom="@id/mymouthpayment_plan_shijipaydata"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@id/mymouthpayment_plan_shijipaydata"
+                    android:textColor="@color/color_white"
+                    android:textSize="12sp" >
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/mymouthpayment_plan_shijipaydataedit"
+                    android:background="@drawable/my_group_break_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/mymouthpayment_plan_jianyipaydata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="9dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="建议还款日期"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mymouthpayment_plan_jianyipaydataedit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/mymouthpayment_plan_jianyipaydata"
+                    android:layout_alignBottom="@id/mymouthpayment_plan_jianyipaydata"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@id/mymouthpayment_plan_jianyipaydata"
+                    android:maxLines="1"
+                    android:textColor="@color/color_white"
+                    android:textSize="12sp" >
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/mymouthpayment_plan_jianyipaydataedit"
+                    android:background="@drawable/my_group_break_line" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/mymouthpayment_plan_deletebtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical|bottom"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="190dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_round_sel"
+                android:text="删除"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

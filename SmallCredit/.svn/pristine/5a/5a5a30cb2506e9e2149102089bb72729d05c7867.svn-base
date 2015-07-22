@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_up" >
+
+        <Button
+            android:id="@+id/third_daihuan_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/btn_general_back"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/third_daihuan_center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="小 信 用"
+            android:textColor="@android:color/white"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/third_daihuan_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:layout_weight="1"
+        android:background="@drawable/my_group_break_line" >
+
+        <com.geo.smallcredit.util.CircularImage
+            android:id="@+id/third_daihuan_img"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/fangzi" />
+
+        <TextView
+            android:id="@+id/third_daihuan_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/third_daihuan_img"
+            android:layout_marginTop="15dip"
+            android:layout_toRightOf="@id/third_daihuan_img"
+            android:text="房贷代还"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/third_daihuan_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/third_daihuan_tv1"
+            android:layout_below="@id/third_daihuan_tv1"
+            android:layout_marginTop="22dip"
+            android:text="月费最低1%|额度最高10万元|无抵押无担保"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/third_daihuan_houseimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/enter_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/third_daihuan_rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:layout_weight="1"
+        android:background="@drawable/my_group_break_line" >
+
+        <com.geo.smallcredit.util.CircularImage
+            android:id="@+id/third_daihuan_img2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/cat" />
+
+        <TextView
+            android:id="@+id/third_daihuan_tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/third_daihuan_img2"
+            android:layout_marginTop="15dip"
+            android:layout_toRightOf="@id/third_daihuan_img2"
+            android:text="车贷代还"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/third_daihuan_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/third_daihuan_tv8"
+            android:layout_below="@id/third_daihuan_tv8"
+            android:layout_marginTop="22dip"
+            android:text="月费最低1%|额度最高10万元|无抵押无担保"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/third_daihuan_carimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/enter_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/third_daihuan_rl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:layout_weight="1"
+        android:background="@drawable/my_group_break_line" >
+
+        <com.geo.smallcredit.util.CircularImage
+            android:id="@+id/third_daihuan_img3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/xing" />
+
+        <TextView
+            android:id="@+id/third_daihuan_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/third_daihuan_img3"
+            android:layout_marginTop="15dip"
+            android:layout_toRightOf="@id/third_daihuan_img3"
+            android:text="信保代还"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/third_daihuan_tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/third_daihuan_tv4"
+            android:layout_below="@id/third_daihuan_tv4"
+            android:layout_marginTop="22dip"
+            android:text="月费最低1%|额度最高10万元|无抵押无担保"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/third_daihuan_xinbaoimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/enter_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/third_daihuan_rl4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:layout_weight="1"
+        android:background="@drawable/my_group_break_line" >
+
+        <com.geo.smallcredit.util.CircularImage
+            android:id="@+id/third_daihuan_img4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/vip" />
+
+        <TextView
+            android:id="@+id/third_daihuan_tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/third_daihuan_img4"
+            android:layout_marginTop="15dip"
+            android:layout_toRightOf="@id/third_daihuan_img4"
+            android:text="信用卡代还"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/third_daihuan_tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/third_daihuan_tv6"
+            android:layout_below="@id/third_daihuan_tv6"
+            android:layout_marginTop="22dip"
+            android:text="月费最低1%|额度最高10万元|无抵押无担保"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/third_daihuan_creditimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/enter_arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

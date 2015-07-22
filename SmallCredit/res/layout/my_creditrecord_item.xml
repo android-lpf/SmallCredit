@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_break_line"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_group_break_line" 
+        >
+
+        <TextView
+            android:id="@+id/my_creditrecord_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="中智诚信用分"
+            android:textColor="@color/color_white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1"
+        android:background="@drawable/my_break_line"
+        android:layout_marginBottom="10dp"
+         >
+
+        <TextView
+            android:id="@+id/my_creditrecord_item_lastselector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="6dp"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="最近一次查询"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/my_creditrecord_item_selectortime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/my_creditrecord_item_lastselector"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="32dp"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="2015-05-29"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/my_creditrecord_item_selectortime"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/my_group_break_line" />
+
+        <TextView
+            android:id="@+id/my_creditrecord_item_selectorfen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:text="721"
+            android:textColor="@color/color_white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/my_creditrecord_item_selectorfentxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/my_creditrecord_item_selectorfen"
+            android:layout_alignBottom="@id/my_creditrecord_item_selectorfen"
+            android:layout_toRightOf="@id/my_creditrecord_item_selectorfen"
+            android:text="分"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/my_creditrecord_item_tigong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_creditrecord_item_selectorfen"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="6dp"
+            android:text="由中智诚征信有限公司提供"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/buju_order_bian" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_group_break_line"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/myselectorprogressitem_housedai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="\t房贷代还业务"
+            android:textColor="@color/color_white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout2"
+        android:background="@drawable/my_break_line"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/myselectorprogressitem_firstshenhe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_break_line"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="\t初审审核中"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/myselectorprogressitem_firstshenhedata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/myselectorprogressitem_firstshenhe"
+            android:layout_alignBottom="@id/myselectorprogressitem_firstshenhe"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="2015-05-29"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/myselectorprogressitem_firstshenhe"
+            android:background="@drawable/my_group_break_line"
+            android:paddingBottom="15dp" />
+
+        <TextView
+            android:id="@+id/myselectorprogressitem_jiepricetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_marginTop="10dp"
+            android:text="\t金额"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/myselectorprogressitem_jieprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/myselectorprogressitem_jiepricetxt"
+            android:layout_alignBottom="@id/myselectorprogressitem_jiepricetxt"
+            android:layout_alignRight="@id/myselectorprogressitem_firstshenhedata"
+            android:text="12,000元"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/myselectorprogressitem_jiebrower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/myselectorprogressitem_jiepricetxt"
+            android:layout_below="@id/myselectorprogressitem_jiepricetxt"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="期限"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/myselectorprogressitem_jiebrowermouth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/myselectorprogressitem_jiebrower"
+            android:layout_alignBottom="@id/myselectorprogressitem_jiebrower"
+            android:layout_alignRight="@id/myselectorprogressitem_jieprice"
+            android:text="1个月"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/myselectorprogressitem_jiemiaoshutxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/myselectorprogressitem_jiebrower"
+            android:layout_below="@id/myselectorprogressitem_jiebrower"
+            android:paddingBottom="10dp"
+            android:text="描述"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/myselectorprogressitem_jiemiaoshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/myselectorprogressitem_jiebrowermouth"
+            android:layout_below="@+id/myselectorprogressitem_jiebrowermouth"
+            android:paddingBottom="10dp"
+            android:text="急需资金周转"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_group_break_line" >
+
+        <TextView
+            android:id="@+id/myselectorprogressitem_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="40dp"
+            android:paddingTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="暂无查询记录"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

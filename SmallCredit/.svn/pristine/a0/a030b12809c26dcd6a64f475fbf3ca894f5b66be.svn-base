@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selectfragment_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_beijingse"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroud_title" >
+
+        <Button
+            android:id="@+id/second_main_jiafenbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加分攻略"
+            android:textColor="@color/color_selecor_back_yellow"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="14sp"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="小信用"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" 
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/second_main_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/backgroud_beijingse"
+        android:divider="@color/color_ming"
+        android:dividerHeight="10dp"
+        android:scrollbars="none" >
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/second_main_img1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.01"
+        android:background="@drawable/credit_home_img" />
+
+    <ImageButton
+        android:id="@+id/second_main_img2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.01"
+        android:background="@drawable/credit_home_img2" />
+
+</LinearLayout>

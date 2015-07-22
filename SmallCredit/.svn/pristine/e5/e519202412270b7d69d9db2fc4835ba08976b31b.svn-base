@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/mysecurepayment_plan_wu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:text="暂无添加还款计划"
+        android:textColor="@color/color_white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/mypayment_plan_item_housepay_relativezhu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp" >
+
+        <RelativeLayout
+            android:id="@+id/mypayment_plan_item_housepay_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/my_group_break_line" >
+
+            <TextView
+                android:id="@+id/mypayment_plan_item_housepay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="用于每月房贷还款"
+                android:textColor="@color/color_white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/mypayment_plan_item_housepay_frontImg"
+                style="@style/my_set_front_imageview"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mypayment_plan_item_housepaydata_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mypayment_plan_item_housepay_relative"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/my_break_line" >
+
+            <TextView
+                android:id="@+id/mypayment_plan_item_housepaydatatxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="还款日期"
+                android:textColor="@color/color_white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mypayment_plan_item_housepaydata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/mypayment_plan_item_housepaydatatxt"
+                android:layout_alignBottom="@id/mypayment_plan_item_housepaydatatxt"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="每月16日"
+                android:textColor="@color/color_white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/mypayment_plan_item_housepaydata_relative"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/my_group_break_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/my_break_line" >
+
+            <TextView
+                android:id="@+id/mypayment_plan_item_housepay_cardnumtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="转入银行卡"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mypayment_plan_item_housepay_cardnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/mypayment_plan_item_housepay_cardnumtxt"
+                android:layout_alignBottom="@id/mypayment_plan_item_housepay_cardnumtxt"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@id/mypayment_plan_item_housepay_cardnumtxt"
+                android:text="6226 0100 1234 5678 123"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mypayment_plan_item_housepay_banktxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/mypayment_plan_item_housepay_cardnumtxt"
+                android:layout_below="@id/mypayment_plan_item_housepay_cardnumtxt"
+                android:paddingBottom="15dp"
+                android:text="所属银行"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mypayment_plan_item_housepay_bankname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/mypayment_plan_item_housepay_cardnum"
+                android:layout_below="@id/mypayment_plan_item_housepay_cardnumtxt"
+                android:text="建设银行"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mypayment_plan_item_housepay_pricetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mypayment_plan_item_housepay_banktxt"
+                android:layout_below="@+id/mypayment_plan_item_housepay_banktxt"
+                android:paddingBottom="15dp"
+                android:text="还款金额"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mypayment_plan_item_housepay_datatxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mypayment_plan_item_housepay_pricetxt"
+                android:layout_below="@+id/mypayment_plan_item_housepay_pricetxt"
+                android:maxLines="1"
+                android:paddingBottom="15dp"
+                android:text="实际还款日期"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mypayment_plan_item_housepay_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/mypayment_plan_item_housepay_pricetxt"
+                android:layout_alignBottom="@id/mypayment_plan_item_housepay_pricetxt"
+                android:layout_alignLeft="@id/mypayment_plan_item_housepay_bankname"
+                android:text="2560.00元"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mypayment_plan_item_housepay_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/mypayment_plan_item_housepay_datatxt"
+                android:layout_alignBottom="@id/mypayment_plan_item_housepay_datatxt"
+                android:layout_alignLeft="@id/mypayment_plan_item_housepay_price"
+                android:text="每月18日"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

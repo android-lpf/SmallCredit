@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_up" >
+
+        <Button
+            android:id="@+id/webview_activity_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/btn_general_back" />
+
+      <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="12sp"
+    android:id="@+id/webview_backtext"
+    android:layout_marginLeft="29dip"
+    android:layout_centerVertical="true"
+    android:textColor="@android:color/white"
+    />  
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/webview_title"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/share"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/webview_activity_share"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+    
+    <WebView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webview_activity"
+        />
+
+</LinearLayout>

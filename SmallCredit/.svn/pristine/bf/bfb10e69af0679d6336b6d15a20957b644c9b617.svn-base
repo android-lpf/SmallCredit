@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_creditpay_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_up" >
+
+        <Button
+            android:id="@+id/my_creditpay_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="25dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dip"
+            android:background="@drawable/btn_general_back" />
+
+        <TextView
+            android:id="@+id/my_creditpay_backtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="29dip"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="开通信用账户"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="20dip"
+        android:lineSpacingExtra="3dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="为了保障您的账户安全,请先绑定一张有效银行卡以便确认您本人身份."
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/my_group_break_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/my_creditpay_bankHao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dip"
+            android:text="卡号"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/my_creditpay_unbindbank_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_box_order_shape_white"
+            android:digits="0123456789"
+            android:inputType="number"
+            android:maxLength="23"
+            android:maxLines="1"
+            android:paddingBottom="15dp"
+            android:paddingLeft="50dip"
+            android:paddingTop="15dp"
+            android:textColor="@android:color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dip"
+        android:lineSpacingExtra="2dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="目前支持(储蓄卡):工行、建行、农行、光大、兴业、邮储、上海银行."
+        android:textColor="@color/color_white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/my_group_break_line" />
+
+    <Button
+        android:id="@+id/my_creditpay_unbindbank_nextbtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/start_round_sel"
+        android:text="下一步"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/my_creditpay_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/sina_ico"
+                android:drawablePadding="5dip"
+                android:gravity="center"
+                android:text="小信用支付服务由新浪支付提供"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:drawableLeft="@drawable/baoxian"
+                android:drawablePadding="5dip"
+                android:gravity="center"
+                android:text="帐户资金安全由永安保险承担"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

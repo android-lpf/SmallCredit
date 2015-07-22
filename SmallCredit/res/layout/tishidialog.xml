@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:orientation="vertical"
+        android:paddingRight="10dip" >
+
+        <TextView
+            android:id="@+id/tishidialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:lines="2"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="为了您的账户安全,只能绑定持卡本人的银行卡."
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tishidialog_lin"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_below="@id/tishidialog_title"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="60dip"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tishidialog_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dip"
+            android:gravity="center"
+            android:text="我知道了"
+            android:textColor="#4849AA"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

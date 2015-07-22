@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xinbaocreditpayment_jiekuan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_break_line"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/xinbaocreditpayment_jiekuan_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_up" >
+
+        <Button
+            android:id="@+id/xinbaocreditpayment_jiekuan_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/btn_general_back"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="借款需求"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/xinbaocreditpayment_jiekuan_telbtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/phone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/my_break_line"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/traceroute_rootview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_break_line"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/xinbaocreditpayment_jiekuan_re1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xinbaocreditpayment_jiekuan_title"
+                android:background="@drawable/my_group_break_line"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip" >
+
+                <TextView
+                    android:id="@+id/xinbaocreditpayment_jiekuan_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dip"
+                    android:text="借款金额"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/xinbaocreditpayment_jiekuan_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_toRightOf="@id/xinbaocreditpayment_jiekuan_tv1"
+                    android:background="@null"
+                    android:hint="输入借款金额"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingBottom="5dip"
+                    android:paddingRight="25dip"
+                    android:paddingTop="5dip"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:text="元"
+                    android:textColor="@color/color_white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/xinbaocreditpayment_jiekuan_re2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xinbaocreditpayment_jiekuan_re1"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/my_group_break_line"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip" >
+
+                <TextView
+                    android:id="@+id/xinbaocreditpayment_jiekuan_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dip"
+                    android:text="借款期限"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/xinbaocreditpayment_jiekuan_spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dip"
+                    android:layout_toRightOf="@id/xinbaocreditpayment_jiekuan_tv2"
+                    android:entries="@array/languages"
+                    android:paddingLeft="5dip"
+                    android:spinnerMode="dialog"
+					android:background="@null"                    
+                    />
+                <ImageView 
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/down"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/xinbaocreditpayment_jiekuan_re3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xinbaocreditpayment_jiekuan_re2"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/my_group_break_line"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip" >
+
+                <TextView
+                    android:id="@+id/xinbaocreditpayment_jiekuan_tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:text="每月还款日"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/xinbaocreditpayment_jiekuan_dayspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dip"
+                    android:layout_toRightOf="@id/xinbaocreditpayment_jiekuan_tv7"
+                    android:entries="@array/mouth"
+                    android:spinnerMode="dialog"
+                    android:background="@null"
+                     />
+                
+                <ImageView 
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/down"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/xinbaocreditpayment_jiekuan_re4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xinbaocreditpayment_jiekuan_re3"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/my_group_break_line"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip" >
+
+                <TextView
+                    android:id="@+id/xinbaocreditpayment_jiekuan_tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dip"
+                    android:text="借款描述"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/xinbaocreditpayment_jiekuan_miaoshu"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_toRightOf="@id/xinbaocreditpayment_jiekuan_tv4"
+                    android:background="@null"
+                    android:hint="输入借款描述"
+                    android:maxLines="1"
+                    android:paddingBottom="5dip"
+                    android:paddingRight="40dip"
+                    android:paddingTop="5dip"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/xinbaocreditpayment_jiekuan_re6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xinbaocreditpayment_jiekuan_re4"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/my_group_break_line"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip" >
+
+                <TextView
+                    android:id="@+id/xinbaocreditpayment_jiekuan_tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dip"
+                    android:text="\t服务费"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/xinbaocreditpayment_jiekuan_fuwufei"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_toRightOf="@id/xinbaocreditpayment_jiekuan_tv5"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:paddingBottom="5dip"
+                    android:paddingRight="25dip"
+                    android:paddingTop="5dip"
+                    android:text="20,000"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:text="元"
+                    android:textColor="@color/color_white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/xinbaocreditpayment_jiekuan_re7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xinbaocreditpayment_jiekuan_re6"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/my_group_break_line"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip" >
+
+                <TextView
+                    android:id="@+id/xinbaocreditpayment_jiekuan_tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dip"
+                    android:text="到期还款"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/xinbaocreditpayment_jiekuan_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_toRightOf="@id/xinbaocreditpayment_jiekuan_tv6"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:paddingBottom="5dip"
+                    android:paddingRight="25dip"
+                    android:paddingTop="5dip"
+                    android:text="12,000"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:text="元"
+                    android:textColor="@color/color_white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/xinbaocreditpayment_jiekuan_savebtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/button_selector"
+                android:text="保存"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

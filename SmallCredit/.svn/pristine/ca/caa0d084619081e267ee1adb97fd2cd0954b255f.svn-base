@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_break_line"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:paddingLeft="15dip"
+            android:text="1.中智诚征信"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:lineSpacingExtra="3dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="为投身中国征信行业十年之久的中智诚征信有限公司，在过去的十年中参与了中国征信业的基础建设工作，我们不仅有信心有能力而且有义务为中国征信 事业的蓬勃发展做出更大贡献。公司成立于2013年9月，注册资金5001万元。"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:paddingLeft="15dip"
+            android:text="2.中智诚征信评分"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:lineSpacingExtra="3dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="中智诚征信有限公司研发的中智诚征信评分，参考了美国广泛应用的征信局FICO 评分模型构建理念，并结合中国的信贷数据实际情况，开发的具有中国特色的征信评分."
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:paddingLeft="15dip"
+            android:text="3.评分说明"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"
+            android:lineSpacingExtra="3dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="中智诚征信评分征信评分从500 分到 900 分，每个分数对应一个违约概率，分数越高表示违约风险越低。"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</ScrollView>

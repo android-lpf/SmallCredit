@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/mybill_item_paydetail_item_travelrelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_group_break_line" >
+
+        <TextView
+            android:id="@+id/mybill_item_paydetail_item_travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="旅游分期(第12期)"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/relative_order_break" >
+
+        <TextView
+            android:id="@+id/mybill_item_paydetail_item_travelstatetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="交易状态"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mybill_item_paydetail_item_travelstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/mybill_item_paydetail_item_travelstatetxt"
+            android:layout_alignBottom="@id/mybill_item_paydetail_item_travelstatetxt"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="待还款"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mybill_item_paydetail_item_traveldatatxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/mybill_item_paydetail_item_travelstatetxt"
+            android:layout_below="@id/mybill_item_paydetail_item_travelstatetxt"
+            android:paddingBottom="10dp"
+            android:text="还款时间"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mybill_item_paydetail_item_traveldata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/mybill_item_paydetail_item_traveldatatxt"
+            android:layout_alignBottom="@id/mybill_item_paydetail_item_traveldatatxt"
+            android:layout_alignLeft="@id/mybill_item_paydetail_item_travelstate"
+            android:paddingBottom="10dp"
+            android:text="2015-07-01"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mybill_item_paydetail_item_travelpricetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/mybill_item_paydetail_item_traveldatatxt"
+            android:layout_below="@id/mybill_item_paydetail_item_traveldatatxt"
+            android:paddingBottom="10dp"
+            android:text="还款金额"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mybill_item_paydetail_item_travelprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/mybill_item_paydetail_item_travelpricetxt"
+            android:layout_alignBottom="@id/mybill_item_paydetail_item_travelpricetxt"
+            android:layout_alignLeft="@id/mybill_item_paydetail_item_traveldata"
+            android:paddingBottom="10dp"
+            android:text="1200.00元"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mybill_item_paydetail_item_travemodetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/mybill_item_paydetail_item_travelpricetxt"
+            android:layout_below="@id/mybill_item_paydetail_item_travelpricetxt"
+            android:paddingBottom="10dp"
+            android:text="还款方式"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mybill_item_paydetail_item_travemode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/mybill_item_paydetail_item_travemodetxt"
+            android:layout_alignBottom="@id/mybill_item_paydetail_item_travemodetxt"
+            android:layout_alignLeft="@id/mybill_item_paydetail_item_travelprice"
+            android:paddingBottom="10dp"
+            android:text="等额本息"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mybill_item_paydetail_item_traveperiodstxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/mybill_item_paydetail_item_travemodetxt"
+            android:layout_below="@id/mybill_item_paydetail_item_travemodetxt"
+            android:paddingBottom="10dp"
+            android:text="还款期数"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mybill_item_paydetail_item_traveperiods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/mybill_item_paydetail_item_traveperiodstxt"
+            android:layout_alignBottom="@id/mybill_item_paydetail_item_traveperiodstxt"
+            android:layout_alignLeft="@id/mybill_item_paydetail_item_travemode"
+            android:paddingBottom="10dp"
+            android:text="1/1"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mybill_item_paydetail_item_traveOverduedaystxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/mybill_item_paydetail_item_traveperiodstxt"
+            android:layout_below="@id/mybill_item_paydetail_item_traveperiodstxt"
+            android:paddingBottom="10dp"
+            android:text="逾期天数"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mybill_item_paydetail_item_traveOverduedays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/mybill_item_paydetail_item_traveOverduedaystxt"
+            android:layout_alignBottom="@id/mybill_item_paydetail_item_traveOverduedaystxt"
+            android:layout_alignLeft="@id/mybill_item_paydetail_item_traveperiods"
+            android:paddingBottom="10dp"
+            android:text="0  天"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mybill_item_paydetail_item_travededittxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/mybill_item_paydetail_item_traveOverduedaystxt"
+            android:layout_below="@id/mybill_item_paydetail_item_traveOverduedaystxt"
+            android:paddingBottom="10dp"
+            android:text="违约金"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mybill_item_paydetail_item_travededit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/mybill_item_paydetail_item_travededittxt"
+            android:layout_alignBottom="@id/mybill_item_paydetail_item_travededittxt"
+            android:layout_alignLeft="@id/mybill_item_paydetail_item_traveOverduedays"
+            android:paddingBottom="10dp"
+            android:text="0.00  元"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mybill_item_paydetail_item_traveinteresttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/mybill_item_paydetail_item_travededittxt"
+            android:layout_below="@id/mybill_item_paydetail_item_travededittxt"
+            android:paddingBottom="10dp"
+            android:text="罚息"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mybill_item_paydetail_item_traveinterest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/mybill_item_paydetail_item_traveinteresttxt"
+            android:layout_alignBottom="@id/mybill_item_paydetail_item_traveinteresttxt"
+            android:layout_alignLeft="@id/mybill_item_paydetail_item_travededit"
+            android:paddingBottom="10dp"
+            android:text="0.00  元"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

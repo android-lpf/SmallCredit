@@ -1,0 +1,450 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D2027" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	
+        <RelativeLayout
+            android:id="@+id/home_rela1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1" >
+
+            <com.geo.smallcredit.vo.RoundProgressBar
+                android:id="@+id/roundProgressBar1"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:id="@+id/person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/roundProgressBar1"
+                android:text="@string/main_person"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/write"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/person"
+                android:layout_below="@id/person"
+                android:layout_marginTop="14dp"
+                android:text="@string/main_write"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/write"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/write"
+                android:layout_marginTop="3dp"
+                android:paddingBottom="10dp"
+                android:text="@string/main_high"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/enter_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_real2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="#21262C" >
+
+            <TextView
+                android:id="@+id/shenqing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="5dp"
+                android:text="@string/main_ask"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/home_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/shenqing"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/shenqing"
+                android:paddingBottom="2dp"
+                android:paddingTop="5dp"
+                android:text="2015年5月30日"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/shenqing"
+                android:layout_below="@id/shenqing"
+                android:paddingBottom="2dp"
+                android:text="@string/main_money"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/home_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/home_tv1"
+                android:layout_alignTop="@id/money"
+                android:layout_below="@id/home_tv1"
+                android:paddingBottom="2dp"
+                android:text="生活借款(第二期)"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/liji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/money"
+                android:layout_below="@id/money"
+                android:paddingBottom="2dp"
+                android:text="@string/main_once"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/home_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/home_tv2"
+                android:layout_alignTop="@id/liji"
+                android:layout_toRightOf="@id/liji"
+                android:paddingBottom="2dp"
+                android:text="￥18.909"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/liji"
+                android:layout_below="@id/liji"
+                android:paddingBottom="2dp"
+                android:text="其中的还款本金:"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/home_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/home_tv3"
+                android:layout_alignTop="@id/textView1"
+                android:layout_below="@id/home_tv3"
+                android:paddingBottom="2dp"
+                android:text="￥17.000"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/jine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/textView1"
+                android:layout_below="@id/textView1"
+                android:paddingBottom="2dp"
+                android:text="其中的还款利息:"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/home_tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/home_tv4"
+                android:layout_alignTop="@id/jine"
+                android:layout_below="@id/home_tv4"
+                android:paddingBottom="9dp"
+                android:text="￥1.909"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/enter_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_rl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/telphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="iPhone 6 16G 福建电信 24个月套餐"
+                android:textColor="#9A753C"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/home_tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/telphone"
+                android:layout_below="@id/telphone"
+                android:layout_marginTop="14dp"
+                android:text="最低"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/home_tv6"
+                android:layout_below="@id/home_tv6"
+                android:layout_marginTop="3dp"
+                android:paddingBottom="20dp"
+                android:text="￥399/月"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/jine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/home_tv6"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@id/home_tv6"
+                android:text="数据流量"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/home_tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/jine"
+                android:layout_alignTop="@id/money"
+                android:layout_below="@id/jine"
+                android:text="2G/月"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/home_tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/jine"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/jine"
+                android:text="通话时长"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/home_tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/home_tv8"
+                android:layout_below="@id/home_tv8"
+                android:layout_toRightOf="@id/home_tv7"
+                android:text="1000分钟/月"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/enter_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_rela4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="#21262C" >
+
+            <com.geo.smallcredit.util.CircularImage
+                android:id="@+id/home_image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="13dp"
+                android:padding="3dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/home_image"
+                android:paddingTop="15dp"
+                android:text="查看你的信用"
+                android:textColor="@color/color_white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/weak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/card"
+                android:layout_below="@id/card"
+                android:paddingTop="10dp"
+                android:text="最后一次查看2015年4月3日"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/home_tv10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/weak"
+                android:layout_below="@id/weak"
+                android:paddingBottom="15dp"
+                android:paddingTop="3dp"
+                android:text="至今已有5家机构的分数出现变动"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/enter_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_rel5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/hmoe_textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text=" 旅游  购物  装修  住宿"
+                android:textColor="#9A753C"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/home_textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/hmoe_textView16"
+                android:layout_below="@id/hmoe_textView16"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/cirle_shape"
+                android:gravity="center"
+                android:lines="2"
+                android:maxEms="4"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="12dp"
+                android:text="最高 24期"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/hmoe_textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/home_textView18"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/home_textView18"
+                android:background="@drawable/cirle_shape"
+                android:gravity="center"
+                android:lines="2"
+                android:maxEms="4"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:text="100天  免费"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/hmoe_textView19"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/hmoe_textView19"
+                android:background="@drawable/cirle_shape"
+                android:gravity="center"
+                android:lines="2"
+                android:maxEms="4"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="12dp"
+                android:text="月供  40元"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/enter_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

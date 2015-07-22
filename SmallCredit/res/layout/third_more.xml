@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/item_host_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_up"
+        android:focusableInTouchMode="true" >
+
+        <Button
+            android:id="@+id/btn_back_do"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/btn_general_back"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/third_more_backtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="29dip"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="消费分期"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/third_more_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/relativeLayout1"
+        android:background="@drawable/third_main_main" >
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/third_more_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#282B30"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/third_more_lvxingbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="旅行"
+            android:textColor="@drawable/main_back_image"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/third_more_gou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="购物"
+            android:textColor="@drawable/main_back_image"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/third_more_zhuang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="装修"
+            android:textColor="@drawable/main_back_image"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/third_more_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="住宿"
+            android:textColor="@drawable/main_back_image"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

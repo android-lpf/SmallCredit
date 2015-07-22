@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/traceroute_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_up" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="重置登录密码"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/resetpwd_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/btn_general_back"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/background" >
+
+                <EditText
+                    android:id="@+id/resetpwd_newpwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="42dp"
+                    android:background="@drawable/button_box_order_shape_white"
+                    android:ems="10"
+                    android:hint="请输入新密码"
+                    android:maxLength="18"
+                    android:maxLines="1"
+                    android:gravity="left"
+                    android:paddingLeft="30dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/resetpwd_newsurepwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/resetpwd_newpwd"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button_box_order_shape_white"
+                    android:ems="10"
+                    android:hint="请输入确认密码"
+                    android:maxLength="18"
+                    android:maxLines="1"
+                    android:gravity="left"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="30dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/color_white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/resetpwd_newsurepwd"
+                    android:layout_below="@+id/resetpwd_newsurepwd"
+                    android:text="提示:密码由8-20个字符组成"
+                    android:textColor="@color/color_white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/textView1"
+                    android:layout_alignRight="@id/resetpwd_newsurepwd"
+                    android:text="显示密码"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/resetpwd_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/textView1"
+                    android:layout_alignBottom="@id/textView1"
+                    android:layout_toLeftOf="@id/textView2"
+                    android:background="@drawable/btn_order_gary"
+                    android:checked="true"
+                    android:textColor="@color/color_ming" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/resetpwd_surebtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/start_round_sel"
+                android:text="确认"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

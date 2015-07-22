@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDF3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_up" >
+
+        <Button
+            android:id="@+id/forgetpwd_find_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/btn_general_back"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="找回密码"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/my_break_line"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/traceroute_rootview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_break_line"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/my_break_line" >
+
+                <EditText
+                    android:id="@+id/forgetpwd_find_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/button_box_order_shape_white"
+                    android:ems="10"
+                    android:hint="请输入手机号码"
+                    android:gravity="left"
+                    android:paddingLeft="30dp"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/color_white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/forgetpwd_find_verifyedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignLeft="@id/forgetpwd_find_edit"
+                    android:layout_below="@id/forgetpwd_find_edit"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_box_order_shape_white"
+                    android:ems="10"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:maxLines="1"
+                    android:gravity="left"
+                    android:paddingLeft="30dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/color_white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" >
+
+                </EditText>
+
+                <com.geo.smallcredit.vo.TimeButton
+                    android:id="@+id/forgetpwd_find_verifybtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignBottom="@id/forgetpwd_find_verifyedit"
+                    android:layout_alignRight="@id/forgetpwd_find_edit"
+                    android:background="@null"
+                    android:text="获取验证码"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/forgetpwd_find_nextbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/forgetpwd_find_verifyedit"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="200dp"
+                    android:background="@drawable/start_round_sel"
+                    android:text="下一步"
+                    android:textColor="@color/color_selector_break" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

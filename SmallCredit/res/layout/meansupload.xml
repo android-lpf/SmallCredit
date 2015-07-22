@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_break_line"
+    android:orientation="vertical"
+    android:id="@+id/meansupload"
+     >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_up" >
+
+        <Button
+            android:id="@+id/meansupload_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/btn_general_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="资料上传"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/meansupload_telbtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/phone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="@drawable/my_group_break_line"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="   资料类型"
+        android:textColor="@color/color_white"
+        android:textSize="16sp" />
+
+    <com.geo.smallcredit.listviewgroup.view.MailListView
+        android:id="@+id/listview_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1" 
+        android:background="@drawable/my_break_line"
+        >
+    </com.geo.smallcredit.listviewgroup.view.MailListView>
+
+    <Button
+        android:id="@+id/meansupload_savebtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/start_round_sel"
+        android:text="保存"
+        android:textColor="@color/color_selector_break" />
+
+</RelativeLayout>

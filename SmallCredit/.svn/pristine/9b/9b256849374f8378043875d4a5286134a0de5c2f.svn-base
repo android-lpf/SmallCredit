@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/success_id"
+    android:background="@drawable/my_break_line"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_up" >
+
+        <Button
+            android:id="@+id/successshenqing_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="25dip"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/btn_general_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="申请成功"
+            android:textColor="@android:color/white"
+            android:textSize="21sp" />
+
+        <ImageView
+            android:id="@+id/successshenqing_imgPhone"
+            android:layout_width="40dip"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/phone" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_group_break_line"
+        android:gravity="left"
+        android:paddingBottom="10dip"
+        android:paddingLeft="15dip"
+        android:paddingTop="10dip"
+        android:text="流程说明"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        >
+
+        <ImageView
+            android:id="@+id/successshenqing_imgBar"
+            android:layout_width="10dip"
+            android:layout_height="100dip"
+            android:layout_marginLeft="50dip"
+            android:background="@drawable/caise_bar" />
+
+        <TextView
+            android:id="@+id/successshenqing_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dip"
+            android:layout_toRightOf="@id/successshenqing_imgBar"
+            android:gravity="center"
+            android:text="您的借款申已提交成功！"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/successshenqing_tv1"
+            android:layout_below="@id/successshenqing_tv1"
+            android:text="2015-05-28  17:36:50"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/successshenqing_imgBar"
+            android:layout_marginLeft="35dip"
+            android:layout_toRightOf="@id/successshenqing_imgBar"
+            android:text="初审中...."
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <ImageView
+            android:id="@+id/successshenqing_imgBar2"
+            android:layout_width="10dip"
+            android:layout_height="100dip"
+            android:layout_marginLeft="50dip"
+            android:background="@drawable/huibar2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/successshenqing_imgBar2"
+            android:layout_marginLeft="35dip"
+            android:layout_toRightOf="@id/successshenqing_imgBar2"
+            android:text="【....机构】终核"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/successshenqing_imgBar3"
+            android:layout_width="10dip"
+            android:layout_height="100dip"
+            android:layout_marginLeft="50dip"
+            android:background="@drawable/huibar2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/successshenqing_imgBar3"
+            android:layout_marginLeft="35dip"
+            android:layout_toRightOf="@id/successshenqing_imgBar3"
+            android:text="放款成功/客户放弃"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    >
+    <Button
+        android:id="@+id/successshenqing_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/start_round_sel"
+        android:layout_alignParentBottom="true"
+        android:text="再逛逛"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:textColor="@android:color/white" 
+        android:layout_marginBottom="30dip"
+        />
+</RelativeLayout>
+</LinearLayout>

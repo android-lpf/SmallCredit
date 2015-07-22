@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/register_yi_id"
+     android:background="@color/backgroud_beijingse"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroud_title" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/register_yi_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="44dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/register_yi" />
+
+        <TextView
+            android:id="@+id/register_yi_shuoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_yi_img"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:maxLines="2"
+            android:paddingBottom="20dp"
+            android:text="姓名及身份证号仅用于申请您的个人信用评分,小信用将会严格守护您的个人信息不外泄并承诺绝不用作它用"
+            android:textColor="#2a2a2b"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/register_yi_real1"
+            android:layout_width="match_parent"
+            android:layout_height="53dip"
+            android:layout_below="@id/register_yi_shuoming"
+            android:layout_marginBottom="10dp" 
+            android:background="#ffffff"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="姓名"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/register_yi_username_edit"
+                android:layout_width="match_parent"
+                android:layout_height="53dip"
+                android:background="@drawable/btn_white_zhijiaobiankuang"
+                android:hint="请输入您的真实姓名"
+                android:inputType="text"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:paddingLeft="65dp"
+                android:textColor="@android:color/darker_gray"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15sp" />
+        </RelativeLayout>
+ 
+        <RelativeLayout
+            android:id="@+id/register_yi_real2"
+            android:layout_width="match_parent"
+            android:layout_height="53dip"
+            android:layout_below="@id/register_yi_real1"
+            android:layout_marginBottom="40dp" 
+            android:background="#ffffff"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="身份证"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/register_yi_shenfennum_edit"
+                android:layout_width="match_parent"
+                android:layout_height="53dip"
+                android:background="@drawable/btn_white_zhijiaobiankuang"
+                android:hint="请输入有效证件"
+                android:inputType="text"
+                android:maxLength="18"
+                android:digits="0123456789QWERTYUIOPLKJHGFDSAZXCVBNMqwertyuioplkjhgfdsazxcvbnm"
+                android:maxLines="1"
+                android:paddingLeft="65dp"
+                android:textColor="@android:color/darker_gray"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/register_yi_nextbtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/register_yi_real2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_gray"
+            android:text="下一步"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/register_yi_loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/register_yi_nextbtn"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:gravity="left"
+            android:text="已有账号？请直接登录"
+            android:textColor="@color/orange"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

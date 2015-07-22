@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bb" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="400dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:lineSpacingExtra="8dip"
+            android:paddingTop="5dip"
+            android:text="1、收款方户名：填写信用卡持卡人姓名。\n 2、收款方开户行：填写“开户行信用卡中心”。\n 3、确认完毕后，系统将提示转账是否成功及转账的金额。\n 4、“付款计划”功能还款 接受币种:人民币\n持卡人可使用“付款计划”功能预先设定付款日期，网上银行将根据持卡人的要求，一次性或每月定期从一卡通转账向持卡人的信用卡或者持卡人指定的他人的信用卡转账还款。"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

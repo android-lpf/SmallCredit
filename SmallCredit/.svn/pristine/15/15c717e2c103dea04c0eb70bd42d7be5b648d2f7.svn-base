@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_up" >
+
+        <Button
+            android:id="@+id/second_payfen_back"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/btn_general_back"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/second_payfen_backtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="29dip"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="我的信用分"
+            android:textColor="@android:color/white"
+            android:textSize="21sp" />
+
+        <ImageView
+            android:id="@+id/second_payfen_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/share" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="30dp"
+                android:paddingTop="30dp" >
+
+                <TextView
+                    android:id="@+id/second_shenfen_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="45dp"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="45dp"
+                    android:text="中智诚信用分"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/second_tigong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/second_shenfen_name"
+                    android:layout_marginRight="3dp"
+                    android:layout_toRightOf="@id/second_shenfen_name"
+                    android:text="由中智诚征信提供"
+                    android:textColor="@color/color_white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/second_shenfen_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/second_tigong"
+                    android:layout_alignTop="@id/second_tigong"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@id/second_tigong"
+                    android:src="@drawable/second_shenfen_gantan" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/backgroud_sanjiao_lan" >
+
+                <TextView
+                    android:id="@+id/second_payfen_showfen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="24dp"
+                    android:paddingBottom="8dp"
+                    android:text="000"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <ProgressBar
+                    android:id="@+id/second_payfen_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="5dp"
+                    android:layout_alignLeft="@id/second_payfen_showfen"
+                    android:layout_below="@id/second_payfen_showfen"
+                    android:background="@drawable/progress_cai"
+                    android:indeterminate="false" />
+
+                <ImageView
+                    android:id="@+id/second_payfen_progress_img"
+                    android:layout_width="5dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/second_payfen_showfen"
+                    android:background="@drawable/progress_shutiao" />
+
+                <TextView
+                    android:id="@+id/second_payfen_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/second_payfen_showfen"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/second_payfen_showfen"
+                    android:background="@drawable/select_fragment_cheng"
+                    android:gravity="center"
+                    android:text="首次"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/second_payfen_gridetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/second_payfen_showfen"
+                    android:layout_marginLeft="35dp"
+                    android:layout_toRightOf="@id/second_payfen_state"
+                    android:paddingBottom="3dp"
+                    android:text="信用等级："
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/second_payfen_dengji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/second_payfen_gridetxt"
+                    android:layout_toRightOf="@id/second_payfen_gridetxt"
+                    android:paddingBottom="3dp"
+                    android:text="非常高"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/second_payfen_selecttimetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/second_payfen_gridetxt"
+                    android:layout_below="@id/second_payfen_gridetxt"
+                    android:paddingBottom="3dp"
+                    android:text="查询时间："
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/second_payfen_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/second_payfen_dengji"
+                    android:layout_toRightOf="@id/second_payfen_selecttimetxt"
+                    android:paddingBottom="3dp"
+                    android:text="2月5日"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/second_payfen_stateshuoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/second_payfen_progress"
+                    android:layout_alignLeft="@id/second_payfen_selecttimetxt"
+                    android:layout_below="@id/second_payfen_time"
+                    android:text="您的分数为首次查询"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/second_payfen_stateshuoming"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="20dp" >
+
+                    <TextView
+                        android:id="@+id/second_payfen_tvv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="下次更新时间:"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/second_payfen_updataTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/second_payfen_tvv"
+                        android:text="2015年6月29号"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/second_payfen_rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/lan_down_item_color_selector" >
+
+                <ImageView
+                    android:id="@+id/second_payfen_img4"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:src="@drawable/show_payfen" />
+
+                <TextView
+                    android:id="@+id/second_payfen_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/second_payfen_img4"
+                    android:text="我的信用能干什么 ?"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:src="@drawable/go_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/second_payfen_rl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lan_down_item_color_selector" >
+
+                <ImageView
+                    android:id="@+id/second_payfen_img5"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:src="@drawable/show_payfensuo" />
+
+                <TextView
+                    android:id="@+id/second_payfen_yinsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/second_payfen_img5"
+                    android:text="开通隐私保护(敬请期待)"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:src="@drawable/go_right" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

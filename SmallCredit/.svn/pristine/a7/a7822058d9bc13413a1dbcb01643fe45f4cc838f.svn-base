@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_break_line"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_up" >
+
+        <Button
+            android:id="@+id/travelitem_activity_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/btn_general_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="北京-韩国6天4晚自由行"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="#ffffff" >
+
+        <com.geo.smallcredit.circle.ViewFlow
+            android:id="@+id/travelitem_activity_viewflow"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+       
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#88252525"
+            android:gravity="center"
+            android:padding="3dip" >
+
+            <com.geo.smallcredit.circle.CircleFlowIndicator
+                android:id="@+id/travelitem_activity_viewflowindic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2sp"
+        android:background="@drawable/my_group_break_line"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/travelitem_activity_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:text="￥150"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/travelitem_activity_tv1"
+            android:layout_marginLeft="3dip"
+            android:layout_toRightOf="@id/travelitem_activity_tv1"
+            android:text="x12期"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white" 
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/travelitem_activity_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2sp"
+        android:background="@drawable/my_group_break_line" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:text="产品介绍"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/enter_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/travelitem_activity_rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2sp"
+        android:background="@drawable/my_group_break_line" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:text="立即申请"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/enter_arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

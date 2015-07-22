@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/mysecurepaayment_addbankitem_wu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:text="暂无数据。。。"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mysecurepaayment_addbankitem_real1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_down"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/mysecurepaayment_addbankitem_wuyou"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_addbank_yuan"
+            android:gravity="center"
+            android:lines="2"
+            android:maxEms="5"
+            android:paddingBottom="22dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="22dp"
+            android:text="无忧还款"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mysecurepaayment_addbankitem_bankname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/mysecurepaayment_addbankitem_wuyou"
+            android:paddingBottom="10dp"
+            android:text="中国建设银行"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mysecurepaayment_addbankitem_banktype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/mysecurepaayment_addbankitem_bankname"
+            android:layout_below="@id/mysecurepaayment_addbankitem_bankname"
+            android:paddingBottom="10dp"
+            android:text="借记卡"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mysecurepaayment_addbankitem_banknum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/mysecurepaayment_addbankitem_banktype"
+            android:layout_below="@id/mysecurepaayment_addbankitem_banktype"
+            android:paddingBottom="15dp"
+            android:text="****\t****\t****\t8209"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mysecurepaayment_addbankitem_real"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/blue_up"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+</LinearLayout>
