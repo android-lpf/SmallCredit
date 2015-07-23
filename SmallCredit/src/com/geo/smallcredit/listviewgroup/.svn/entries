@@ -1,0 +1,34 @@
+10
+
+dir
+169
+http://124.42.101.174:3680/usvn/svn/SmallCredit/trunk/SmallCredit/src/com/geo/smallcredit/listviewgroup
+http://124.42.101.174:3680/usvn/svn/SmallCredit
+
+
+
+2015-06-05T11:06:27.182568Z
+60
+wuwenlian
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6026862a-a699-4b3d-ab25-c5b04c73c0dc
+
+interfaces
+dir
+
+view
+dir
+

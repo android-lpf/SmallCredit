@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/usvn/svn/SmallCredit/!svn/ver/85/trunk/SmallCredit/src/com/geo/smallcredit/view/wheelcity/adapters
+END
+WheelViewAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/usvn/svn/SmallCredit/!svn/ver/85/trunk/SmallCredit/src/com/geo/smallcredit/view/wheelcity/adapters/WheelViewAdapter.java
+END
+ArrayWheelAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/usvn/svn/SmallCredit/!svn/ver/85/trunk/SmallCredit/src/com/geo/smallcredit/view/wheelcity/adapters/ArrayWheelAdapter.java
+END
+AdapterWheel.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/usvn/svn/SmallCredit/!svn/ver/85/trunk/SmallCredit/src/com/geo/smallcredit/view/wheelcity/adapters/AdapterWheel.java
+END
+AbstractWheelTextAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/usvn/svn/SmallCredit/!svn/ver/85/trunk/SmallCredit/src/com/geo/smallcredit/view/wheelcity/adapters/AbstractWheelTextAdapter.java
+END
+AbstractWheelAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/usvn/svn/SmallCredit/!svn/ver/85/trunk/SmallCredit/src/com/geo/smallcredit/view/wheelcity/adapters/AbstractWheelAdapter.java
+END
+NumericWheelAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/usvn/svn/SmallCredit/!svn/ver/85/trunk/SmallCredit/src/com/geo/smallcredit/view/wheelcity/adapters/NumericWheelAdapter.java
+END

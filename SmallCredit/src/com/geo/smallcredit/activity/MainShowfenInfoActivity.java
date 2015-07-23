@@ -25,7 +25,7 @@ import android.widget.TextView;
 
 public class MainShowfenInfoActivity extends FragmentActivity implements OnClickListener{
 	
-	private Button backBtn;
+	private Button backBtn,fenxiangBtn;
 	private RadioButton rb1,rb2;
 	private RelativeLayout mReal,mReal2,mReal3;
 	public static final int TAB_SHOWFEN = 0;
@@ -58,6 +58,7 @@ public class MainShowfenInfoActivity extends FragmentActivity implements OnClick
 			public void onPageSelected(int id) {
 				switch (id) {
 				case TAB_SHOWFEN2:
+					rb1.setChecked(false);
 					rb2.setChecked(true);
 					break;
 				}
@@ -65,7 +66,7 @@ public class MainShowfenInfoActivity extends FragmentActivity implements OnClick
 
 			@Override
 			public void onPageScrolled(int arg0, float arg1, int arg2) {
-
+				
 			}
 
 			@Override
@@ -84,7 +85,7 @@ public class MainShowfenInfoActivity extends FragmentActivity implements OnClick
 		mReal.setOnClickListener(this);
 		mReal2.setOnClickListener(this);
 		mReal3.setOnClickListener(this);
-
+		fenxiangBtn.setOnClickListener(this);
 	}
 
 
@@ -92,11 +93,12 @@ public class MainShowfenInfoActivity extends FragmentActivity implements OnClick
 
 		backBtn = (Button) findViewById(R.id.second_main_showfen_backbtn);
 		companyname = (TextView) findViewById(R.id.second_main_showfen_companyname);
+		fenxiangBtn = (Button) findViewById(R.id.second_main_showfen_fenxiangbtn);
 		rb1 = (RadioButton) findViewById(R.id.second_main_showfen_select);
 		rb2 = (RadioButton) findViewById(R.id.second_main_showfen_financial);
 		mReal = (RelativeLayout) findViewById(R.id.second_main_showfen_real2);
 		mReal2 = (RelativeLayout) findViewById(R.id.second_main_showfen_real3);
-		mReal3 = (RelativeLayout) findViewById(R.id.second_main_showfen_real4);
+		mReal3 = (RelativeLayout) findViewById(R.id.second_main_showfen_real);
 		mPager = (ViewPager) findViewById(R.id.second_main_showfen_vPager);
 		mPager.setOffscreenPageLimit(2);
 
@@ -106,6 +108,11 @@ public class MainShowfenInfoActivity extends FragmentActivity implements OnClick
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
+		
+		case R.id.second_main_showfen_backbtn:
+			MainShowfenInfoActivity.this.finish();
+			break;
+			
 		case R.id.second_main_showfen_select:
 			mPager.setCurrentItem(TAB_SHOWFEN);
 			break;

@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@color/backgroud_beijingse"
     android:orientation="vertical" >
 
     <RelativeLayout
@@ -23,7 +23,6 @@
             android:textColor="@android:color/white"
             android:textSize="21sp" />
 
-
         <ImageButton
             android:id="@+id/third_main_messageBtn"
             android:layout_width="30dp"
@@ -32,9 +31,7 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
             android:background="@drawable/share"
-            android:visibility="gone"
-             />
-
+            android:visibility="gone" />
     </RelativeLayout>
 
     <!-- 图片轮播 -->
@@ -42,20 +39,38 @@
     <FrameLayout
         android:id="@+id/third_main_two_framelayout"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="3dp"
-        android:background="@drawable/third_main" >
+        android:layout_height="120dp"
+        android:background="@drawable/faxian_banner" >
     </FrameLayout>
 
     <ListView
         android:id="@+id/third_main_two_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="3dp"
-        android:layout_marginTop="3dp"
-        android:background="@drawable/background"
-        android:dividerHeight="4dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/backgroud_beijingse"
+        android:divider="@color/color_ming"
+        android:dividerHeight="10dp"
         android:scrollbars="none" >
     </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal" 
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/third_main_two_menubtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menubtn"
+            android:layout_marginLeft="10dp"
+             />
+    </LinearLayout>
 
 </LinearLayout>

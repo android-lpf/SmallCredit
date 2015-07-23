@@ -59,7 +59,7 @@ public class RegisterActivity extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		MainApplication.getInstance().addActivity(RegisterActivity.this);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.register_yi);
+		setContentView(R.layout.register_activity);
 		initview();
 		instance = this;
 		btn_onclick();
@@ -247,7 +247,7 @@ public class RegisterActivity extends Activity implements OnClickListener {
 							AppConfig.getAndroidId(RegisterActivity.this));
 
 					FinalHttp fh = new FinalHttp();
-					fh.post(InternetURL.CHECKPHONE, params,
+					fh.get(InternetURL.CHECKPHONE, params,
 							new AjaxCallBack<String>() {
 								@Override
 								public void onSuccess(String t) {

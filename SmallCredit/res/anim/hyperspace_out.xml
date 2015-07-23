@@ -19,7 +19,7 @@
         android:fromDegrees="0"
         android:pivotX="50%"
         android:pivotY="50%"
-        android:toDegrees="360"
+        android:toDegrees="90"
         android:toYScale="0.0" />
 
     <set
@@ -39,7 +39,7 @@
             android:fromDegrees="0"
             android:pivotX="50%"
             android:pivotY="50%"
-            android:toDegrees="-360"
+            android:toDegrees="-180"
             android:toYScale="0.0" />
     </set>
 

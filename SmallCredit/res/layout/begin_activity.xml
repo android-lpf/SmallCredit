@@ -16,14 +16,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/backgroud_title"
             android:gravity="center"
             android:paddingBottom="10dip"
             android:paddingTop="10dip"
             android:text="登录"
-            android:background="#000000"
             android:textColor="@color/color_white"
             android:textSize="20sp" />
-        
 
         <RelativeLayout
             android:layout_width="match_parent"

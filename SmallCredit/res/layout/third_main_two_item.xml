@@ -1,76 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/third_main_two_item_Line"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:id="@+id/third_main_two_item_Line"
-     >
+    android:orientation="vertical" >
 
     <RelativeLayout
         android:id="@+id/third_main_two_item_real"
         android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:background="@color/blue_down"
-        android:gravity="center_vertical" >
+        android:layout_height="wrap_content"
+        android:background="@drawable/second_showfen_info_layout" >
 
         <ImageView
             android:id="@+id/third_mian_two_imageView"
-            android:layout_width="70dip"
-            android:layout_height="70dip"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
             android:layout_marginBottom="10dip"
             android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
             android:layout_marginTop="10dip"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:layout_centerVertical="true"
-            android:background="@drawable/third_xin"
+            android:background="@drawable/faxian_pingan"
             android:gravity="center"
-           />
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" />
 
         <TextView
             android:id="@+id/third_main_two_item_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
             android:layout_alignTop="@id/third_mian_two_imageView"
-            android:layout_toRightOf="@id/third_mian_two_imageView"
-            android:paddingBottom="10dp"
-            android:text="乐分期"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold" 
             android:layout_marginTop="10dp"
-            />
+            android:layout_toRightOf="@id/third_mian_two_imageView"
+            android:paddingBottom="20dp"
+            android:text="平安直通"
+            android:textColor="@color/black_zitise"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/third_mian_two_item_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/third_main_two_item_name"
             android:layout_below="@id/third_main_two_item_name"
-            android:layout_marginLeft="30dp"
-            android:layout_alignBottom="@id/third_mian_two_imageView"
             android:layout_toRightOf="@id/third_mian_two_imageView"
-            android:gravity="center_vertical"
-            android:text="旅游\t购物\t装修\t住宿"
-            android:textColor="@android:color/white"
-            android:textSize="14sp" />
+            android:paddingBottom="3dp"
+            android:text="大品牌,门槛低"
+            android:textColor="@color/danhui"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/third_mian_two_item_info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/third_mian_two_item_info"
+            android:layout_below="@id/third_mian_two_item_info"
+            android:text="一次申请多个贷款方案"
+            android:textColor="@color/danhui"
+            android:textSize="12sp" />
 
         <ImageView
             android:id="@+id/third_mian_two_item_front"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/third_main_two_item_name"
             android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
-            android:src="@drawable/enter_arrow" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/third_main_two_item_real2"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:background="@color/blue_up" >
+            android:src="@drawable/next" />
     </RelativeLayout>
 
 </LinearLayout>
