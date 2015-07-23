@@ -1,9 +1,6 @@
 package com.geo.smallcredit.activity;
 
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import net.tsz.afinal.FinalHttp;
 import net.tsz.afinal.http.AjaxCallBack;
 import net.tsz.afinal.http.AjaxParams;
@@ -90,15 +87,17 @@ public class FindPwdActivity extends Activity implements OnClickListener {
 				} else {
 					// 该设置是获取验证码
 					phoneTextView.onCreate(savedInstanceState);
-					phoneTextView.setTextAfter("秒后重新获取").setTextBefore("获取验证码").setLenght(60 * 1000);
+					phoneTextView.setTextAfter("秒后重新获取").setTextBefore("获取").setLenght(60 * 1000);
 					AjaxParams params = new AjaxParams();
-					params.put("phone",tel);
+					params.put("phone", tel);
 					FinalHttp fh = new FinalHttp();
 					fh.post(InternetURL.CHECKPHONE, params,
 							new AjaxCallBack<String>() {
 								@Override
 								public void onSuccess(String t) {
-									Toast.makeText(FindPwdActivity.this,"验证码发送成功", Toast.LENGTH_SHORT).show();
+									Toast.makeText(FindPwdActivity.this,
+											"验证码发送成功", Toast.LENGTH_SHORT)
+											.show();
 									Log.i("mytag", "返回" + t);
 								}
 
@@ -128,48 +127,12 @@ public class FindPwdActivity extends Activity implements OnClickListener {
 				}else if ("".equals(verify) || verify == null) {
 					ToastUtil.show(FindPwdActivity.this, "验证码不能为空");
 
-				} else if (verify.length()!=5) {
-					ToastUtil.show(FindPwdActivity.this, "请输入5位验证码");
+				} else if (verify.length()!=6) {
+					ToastUtil.show(FindPwdActivity.this, "请输入6位验证码");
 
 				} else {
-					AjaxParams params=new AjaxParams();
-					params.put("phone", tel);
-					params.put("code", verify);
-					FinalHttp fh=new FinalHttp();
-					fh.post(InternetURL.CHECK_PHONE_NUMBER,params,new AjaxCallBack<String>() {
-
-						@Override
-						public void onFailure(Throwable t, int errorNo,
-								String strMsg) {
-							super.onFailure(t, errorNo, strMsg);
-							ToastUtil.show(FindPwdActivity.this,"获取数据失败");
-						}
-
-						@Override
-						public void onSuccess(String t) {
-							super.onSuccess(t);
-							String json=t.toString();
-							if(!"".equals(json)||json!=null){
-								try {
-									JSONObject json1=new JSONObject(json);
-									int code=json1.getInt("code");
-									String info=json1.getString("info");
-									if(code==200){
-										Intent it = new Intent(FindPwdActivity.this, ResetPwdActivity.class);
-										it.putExtra("phone",tel);
-										startActivity(it);
-													
-									}else if(code==405){
-										ToastUtil.show(FindPwdActivity.this,info);
-									}else if(code==406){
-										ToastUtil.show(FindPwdActivity.this,info);
-									}
-								} catch (JSONException e) {
-									e.printStackTrace();
-								}
-							}
-						}
-					});
+					Intent it = new Intent(FindPwdActivity.this, ResetPwdActivity.class);
+					startActivity(it);
 				}
 			} else {
 

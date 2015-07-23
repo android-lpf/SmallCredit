@@ -13,7 +13,7 @@
         <Button
             android:id="@+id/second_main_showfen_backbtn"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="6dp"
             android:background="@drawable/btn_general_back" />
@@ -29,6 +29,71 @@
             android:text="中智诚信用分"
             android:textColor="@color/white"
             android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/second_main_showfen_fenxiangbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/share_baise" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second_main_showfen_real"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="1"
+        android:background="@drawable/second_main_showfen_backgroud" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/second_main_showfen_vPager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@null"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+
+        <RadioGroup
+            android:id="@+id/second_main_showfen_mRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/second_main_showfen_vPager"
+            android:background="@null"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/second_main_showfen_select"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/secondfen_yuandian_btn"
+                android:button="@null"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/second_main_showfen_financial"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/secondfen_yuandian_btn"
+                android:button="@null"
+                android:checked="false" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/second_main_showfen_tigong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/second_main_showfen_mRadioGroup"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:text="由中智诚征信有限公司提供"
+            android:textColor="@color/actionsheet_gray"
+            android:textSize="12sp" />
     </RelativeLayout>
 
     <ScrollView
@@ -47,78 +112,95 @@
             <RelativeLayout
                 android:id="@+id/second_main_showfen_real1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/second_main_showfen_backgroud" >
+                android:layout_height="125dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/second_feninfo_up" >
 
-                <android.support.v4.view.ViewPager
-                    android:id="@+id/second_main_showfen_vPager"
-                    android:layout_width="match_parent"
-                    android:layout_height="257dp"
-                    android:layout_gravity="top"
-                    android:flipInterval="30"
-                    android:persistentDrawingCache="animation" />
-
-                <RadioGroup
-                    android:id="@+id/second_main_showfen_mRadioGroup"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/second_main_showfen_vPager"
-                    android:gravity="center_horizontal"
-                    android:orientation="horizontal"
-                    android:paddingBottom="10dp"
-                    android:paddingTop="10dp" >
-
-                    <RadioButton
-                        android:id="@+id/second_main_showfen_select"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/secondfen_yuandian_btn"
-                        android:button="@null"
-                        android:checked="false"
-                        android:gravity="center_horizontal" />
-
-                    <RadioButton
-                        android:id="@+id/second_main_showfen_financial"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:background="@drawable/secondfen_yuandian_btn"
-                        android:button="@null"
-                        android:checked="true"
-                        android:gravity="center" />
-                </RadioGroup>
+                <ImageView
+                    android:id="@+id/second_main_showfen_wenimg"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/credit_wenhao" />
 
                 <TextView
-                    android:id="@+id/second_main_showfen_tigong"
+                    android:id="@+id/second_main_showfen_text8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_below="@id/second_main_showfen_mRadioGroup"
+                    android:layout_alignBaseline="@id/second_main_showfen_wenimg"
                     android:layout_marginBottom="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
-                    android:text="由中智诚征信有限公司提供"
-                    android:textColor="@color/actionsheet_gray"
-                    android:textSize="12sp" />
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/second_main_showfen_wenimg"
+                    android:text="为什么我没有xxx信用分？"
+                    android:textColor="#333333"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/second_main_showfen_text9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/second_main_showfen_wenimg"
+                    android:layout_below="@id/second_main_showfen_text8"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="6dp"
+                    android:lineSpacingExtra="1dp"
+                    android:text="您的信用报告中信息太少,还不足以产生有效的信用评分,这可能因为"
+                    android:textColor="@color/danhui"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/second_main_showfen_text10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/second_main_showfen_text9"
+                    android:layout_below="@id/second_main_showfen_text9"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="6dp"
+					android:lineSpacingExtra="1dp"                    
+                    android:text="1.您的信贷历史信息太少,如未申请过贷款或未使用过信用卡.快速创建您的信贷记录"
+                    android:textColor="@color/danhui"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/second_main_showfen_text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/second_main_showfen_text10"
+                    android:layout_below="@id/second_main_showfen_text10"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="6dp"
+                    android:lineSpacingExtra="1dp"
+                    android:text="2.您的认证信息不足,征信公司无法全面评判您的信用.补充您的个人信息让征信公司更全面的评判您"
+                    android:textColor="@color/danhui"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/second_main_showfen_real2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_height="125dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/second_showfen_info_layout" >
 
                 <ImageView
                     android:id="@+id/second_main_showfen_maoimg1"
-                    android:layout_width="101dp"
+                    android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
                     android:layout_marginTop="15dp"
                     android:background="@drawable/second_showfen_info_mao" >
                 </ImageView>
@@ -127,8 +209,8 @@
                     android:id="@+id/second_main_showfen_text1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/second_main_showfen_maoimg1"
                     android:layout_marginBottom="3dp"
-                    android:layout_marginTop="15dp"
                     android:layout_toRightOf="@id/second_main_showfen_maoimg1"
                     android:text="好信用好收益！"
                     android:textColor="#333333"
@@ -138,15 +220,15 @@
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_alignBottom="@id/second_main_showfen_maoimg1"
                     android:layout_below="@id/second_main_showfen_text1"
-                    android:layout_marginBottom="15dp"
                     android:layout_toRightOf="@id/second_main_showfen_maoimg1" >
 
                     <TextView
                         android:id="@+id/second_main_showfen_text2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="3dp"
+                        android:layout_marginBottom="2dp"
                         android:layout_marginRight="20dp"
                         android:lines="1"
                         android:text="中智诚信用分660-820之间的用户,"
@@ -160,8 +242,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignLeft="@id/second_main_showfen_text2"
                         android:layout_below="@id/second_main_showfen_text2"
-                        android:layout_marginBottom="3dp"
-                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="2dp"
                         android:text="即可享受存钱罐"
                         android:textColor="#777777"
                         android:textSize="13sp"
@@ -171,9 +252,8 @@
                         android:id="@+id/second_main_showfen_text4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@id/second_main_showfen_text3"
                         android:layout_below="@id/second_main_showfen_text2"
-                        android:layout_marginBottom="3dp"
+                        android:layout_marginBottom="2dp"
                         android:layout_toRightOf="@id/second_main_showfen_text3"
                         android:lines="1"
                         android:text="30天5倍收益！"
@@ -187,7 +267,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignLeft="@id/second_main_showfen_text3"
                         android:layout_below="@id/second_main_showfen_text4"
-                        android:layout_marginBottom="3dp"
+                        android:layout_marginBottom="2dp"
                         android:text="每人限购5000元"
                         android:textColor="#777777"
                         android:textSize="13sp"
@@ -199,7 +279,6 @@
                         android:layout_height="wrap_content"
                         android:layout_alignLeft="@id/second_main_showfen_text5"
                         android:layout_below="@id/second_main_showfen_text5"
-                        android:layout_marginBottom="3dp"
                         android:text="近七日年化收益率"
                         android:textColor="#777777"
                         android:textSize="13sp"
@@ -210,8 +289,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignBaseline="@id/second_main_showfen_text6"
-                        android:layout_below="@id/second_main_showfen_text5"
-                        android:layout_marginRight="25dp"
+                        android:layout_alignBottom="@id/second_main_showfen_text6"
                         android:layout_toRightOf="@id/second_main_showfen_text6"
                         android:lines="1"
                         android:text="3.454%"
@@ -229,114 +307,76 @@
                     android:background="@drawable/second_huodong" />
             </RelativeLayout>
 
-            <RelativeLayout
-                android:id="@+id/second_main_showfen_real3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/second_feninfo_up" >
-
-                <ImageView
-                    android:id="@+id/second_main_showfen_wenimg"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/credit_wenhao" />
-
-                <TextView
-                    android:id="@+id/second_main_showfen_text8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@id/second_main_showfen_wenimg"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_toRightOf="@id/second_main_showfen_wenimg"
-                    android:text="如何提升我的信用分"
-                    android:textColor="#333333"
-                    android:textSize="19sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/second_main_showfen_text9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/second_main_showfen_wenimg"
-                    android:layout_below="@id/second_main_showfen_text8"
-                    android:layout_marginBottom="3dp"
-                    android:text="您通过以下操作可能会提升您的信用分数"
-                    android:textColor="@color/danhui"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/second_main_showfen_text10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/second_main_showfen_text9"
-                    android:layout_below="@id/second_main_showfen_text9"
-                    android:layout_marginBottom="3dp"
-                    android:text="1.增加您的信贷记录"
-                    android:textColor="@color/danhui"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/second_main_showfen_text11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/second_main_showfen_text10"
-                    android:layout_below="@id/second_main_showfen_text10"
-                    android:layout_marginBottom="20dp"
-                    android:text="2.补充您的个人信息"
-                    android:textColor="@color/danhui"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/second_main_showfen_real4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/second_feninfo_down" >
-
-                <ImageView
-                    android:id="@+id/second_main_showfen_wenimg2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/credit_wenhao">
-                </ImageView>
-
-                <TextView
-                    android:id="@+id/second_main_showfen_text12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginTop="15dp"
-                    android:text="我目前的信用分都能干什么"
-                    android:textColor="#333333"
-                    android:textSize="19sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/second_main_showfen_text13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Lorem\tipsum\tdolor\tsit\tamet,consectetur\nadipiscing\telit.Aenean\teuismod\tbibendum\nlaoreet.Proin\tgravida\tdolor\tsit\tamet\tlacis\naccumsan\tet\tviverra"
-                    android:textColor="@color/danhui"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-            </RelativeLayout>
+	            <RelativeLayout
+	                android:id="@+id/second_main_showfen_real3"
+	                android:layout_width="match_parent"
+	                android:layout_height="125dp"
+	                android:layout_marginBottom="10dp"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:visibility="gone"
+	                android:background="@drawable/second_feninfo_up" >
+	
+	                <ImageView
+	                    android:id="@+id/second_main_showfen_wenimg"
+	                    android:layout_width="25dp"
+	                    android:layout_height="25dp"
+	                    android:layout_marginBottom="15dp"
+	                    android:layout_marginLeft="20dp"
+	                    android:layout_marginRight="15dp"
+	                    android:layout_marginTop="15dp"
+	                    android:background="@drawable/credit_wenhao" />
+	
+	                <TextView
+	                    android:id="@+id/second_main_showfen_text8"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignBaseline="@id/second_main_showfen_wenimg"
+	                    android:layout_marginBottom="15dp"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_toRightOf="@id/second_main_showfen_wenimg"
+	                    android:text="如何提升我的信用分"
+	                    android:textColor="#333333"
+	                    android:textSize="19sp"
+	                    android:textStyle="bold" />
+	
+	                <TextView
+	                    android:id="@+id/second_main_showfen_text9"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignLeft="@id/second_main_showfen_wenimg"
+	                    android:layout_below="@id/second_main_showfen_text8"
+	                    android:layout_marginBottom="3dp"
+	                    android:text="您通过以下操作可能会提升您的信用分数"
+	                    android:textColor="@color/danhui"
+	                    android:textSize="13sp"
+	                    android:textStyle="bold" />
+	
+	                <TextView
+	                    android:id="@+id/second_main_showfen_text10"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignLeft="@id/second_main_showfen_text9"
+	                    android:layout_below="@id/second_main_showfen_text9"
+	                    android:layout_marginBottom="3dp"
+	                    android:text="1.增加您的信贷记录"
+	                    android:textColor="@color/danhui"
+	                    android:textSize="13sp"
+	                    android:textStyle="bold" />
+	
+	                <TextView
+	                    android:id="@+id/second_main_showfen_text11"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignLeft="@id/second_main_showfen_text10"
+	                    android:layout_below="@id/second_main_showfen_text10"
+	                    android:layout_marginBottom="20dp"
+	                    android:text="2.补充您的个人信息"
+	                    android:textColor="@color/danhui"
+	                    android:textSize="13sp"
+	                    android:textStyle="bold" />
+	            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>

@@ -55,106 +55,25 @@ public class ThridAdapter extends BaseAdapter {
 			v = LayoutInflater.from(context).inflate(
 					R.layout.third_main_two_item, null);
 			h = new Helper();
-			h.mLine = (LinearLayout) v
-					.findViewById(R.id.third_main_two_item_Line);
-			h.real1 = (RelativeLayout) v
-					.findViewById(R.id.third_main_two_item_real);
-			h.real2 = (RelativeLayout) v
-					.findViewById(R.id.third_main_two_item_real2);
 			h.img = (ImageView) v.findViewById(R.id.third_mian_two_imageView);
 			h.name = (TextView) v.findViewById(R.id.third_main_two_item_name);
 			h.info = (TextView) v.findViewById(R.id.third_mian_two_item_info);
+			h.info2 = (TextView) v.findViewById(R.id.third_mian_two_item_info2);
 			h.front = (ImageView) v
 					.findViewById(R.id.third_mian_two_item_front);
 			v.setTag(h);
 		}
 		h = (Helper) v.getTag();
+		h.img.setBackgroundResource(R.drawable.faxian_pingan);
 		h.name.setText(list.get(position).getName());
 		h.info.setText(list.get(position).getInfo());
-		h.front.setBackgroundResource(R.drawable.enter_arrow);
-		switch (position) {
-		case 0:
-			h.img.setBackgroundResource(R.drawable.third_le);
-			h.real1.setBackgroundResource(R.drawable.lan_down_item_color_selector);
-			h.real2.setBackgroundResource(R.drawable.lan_up_item_color_selector);
-			h.mLine.setOnClickListener(new OnClickListener() {
-
-				@Override
-				public void onClick(View v) {
-					if (SharedPreferencesUtils.getString(context, "userid",
-							null) == null) {
-						Intent intent = new Intent(context, BeginActivity.class);
-						context.startActivity(intent);
-					} else {
-						Intent intent = new Intent(context,
-								XiaofeiActivity.class);
-						intent.putExtra("backText", "发现");
-						context.startActivity(intent);
-
-					}
-				}
-			});
-			break;
-
-		case 1:
-			h.img.setBackgroundResource(R.drawable.third_xin);
-			h.real1.setBackgroundResource(R.drawable.lan_down_item_color_selector);
-			h.real2.setBackgroundResource(R.drawable.lan_up_item_color_selector);
-			h.mLine.setOnClickListener(new OnClickListener() {
-
-				@Override
-				public void onClick(View v) {
-					
-					if (SharedPreferencesUtils.getString(context, "userid",
-							null) == null) {
-						Intent intent = new Intent(context, BeginActivity.class);
-						context.startActivity(intent);
-					} else {
-						Intent intent = new Intent(context, JieActivity.class);
-						intent.putExtra("backText", "发现");
-						context.startActivity(intent);
-					}
-				}
-			});
-			break;
-
-		case 2:
-			h.img.setBackgroundResource(R.drawable.third_bang);
-			h.real1.setBackgroundResource(R.drawable.lan_down_item_color_selector);
-			h.real2.setBackgroundResource(R.drawable.lan_up_item_color_selector);
-			h.mLine.setOnClickListener(new OnClickListener() {
-
-				@Override
-				public void onClick(View v) {
-
-					// Intent intent = new Intent(context, DaiActivity.class);
-					// context.startActivity(intent);
-					ToastUtil.show(context, "敬请期待。。。");
-
-				}
-			});
-			break;
-
-		case 3:
-			h.img.setBackgroundResource(R.drawable.third_wen);
-			h.real1.setBackgroundResource(R.drawable.cheng_up_item_selector);
-			h.real2.setBackgroundResource(R.drawable.cheng_down_item_selector);
-			h.mLine.setOnClickListener(new OnClickListener() {
-
-				@Override
-				public void onClick(View v) {
-					ToastUtil.show(context, "敬请期待。。。");
-				}
-			});
-			break;
-		}
+		h.info2.setText(list.get(position).getInformation());
+		h.front.setBackgroundResource(R.drawable.next);
 		return v;
 	}
 
 	class Helper {
-		LinearLayout mLine;
-		RelativeLayout real1, real2;
 		ImageView img, front;
-		TextView name, info;
+		TextView name, info,info2;
 	}
 }

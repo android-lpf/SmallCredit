@@ -1,8 +1,5 @@
 package com.geo.smallcredit.activity;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import net.tsz.afinal.FinalHttp;
 import net.tsz.afinal.http.AjaxCallBack;
 import net.tsz.afinal.http.AjaxParams;
@@ -11,7 +8,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.inputmethod.InputMethodManager;
@@ -24,7 +20,6 @@ import android.widget.LinearLayout;
 import com.geo.smallcredit.R;
 import com.geo.smallcredit.MainApplication.MainApplication;
 import com.geo.smallcredit.util.CommonUtil;
-import com.geo.smallcredit.util.MD5Util;
 import com.geo.smallcredit.util.PromptManager;
 import com.geo.smallcredit.util.ToastUtil;
 import com.geo.smallcredit.utils.net.InternetURL;
@@ -35,8 +30,7 @@ public class ResetPwdActivity extends Activity implements OnClickListener,
 	private Button sureBnt;
 	private TelephonyManager tm; // 获取手机 imei
 	private LinearLayout mLine;
-	private Intent intent;
-	private String phone;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -44,8 +38,6 @@ public class ResetPwdActivity extends Activity implements OnClickListener,
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.resetpwd);
 		initView();
-		intent=getIntent();
-		phone=intent.getStringExtra("phone");
 		initClick();
 		tm = (TelephonyManager) this.getSystemService(TELEPHONY_SERVICE);
 		
@@ -137,9 +129,12 @@ public class ResetPwdActivity extends Activity implements OnClickListener,
 					 * password IMEI： imei
 					 */
 					AjaxParams params = new AjaxParams();
-					params.put("phone",phone);
-					params.put("password",MD5Util.string2MD5(newPassword));
+					params.put("password", newPassword);
+
+					params.put("imei", tm.getDeviceId());
+
 					FinalHttp fh = new FinalHttp();
+
 					fh.post(InternetURL.CHECK_FORGETPWD, params,
 							new AjaxCallBack<String>() {
 								@Override
@@ -147,37 +142,20 @@ public class ResetPwdActivity extends Activity implements OnClickListener,
 										String strMsg) {
 									super.onFailure(t, errorNo, strMsg);
 									ToastUtil.show(ResetPwdActivity.this,
-											"数据请求失败");
+											"密码重置失败");
 								}
 
 								@Override
 								public void onSuccess(String t) {
 									super.onSuccess(t);
-									String json=t.toString();
-									if(!"".equals(json)||json!=null){
-										try {
-											JSONObject json1=new JSONObject(json);
-											int code=json1.getInt("code");
-											String info=json1.getString("info");
-											if(code==200){
-												Intent it = new Intent(ResetPwdActivity.this,BeginActivity.class);
-												startActivity(it);
-												ToastUtil.show(ResetPwdActivity.this,info);
-												ResetPwdActivity.this.finish();
-											}else if(code==400){
-												ToastUtil.show(ResetPwdActivity.this,info);
-											}else if(code==108){
-												ToastUtil.show(ResetPwdActivity.this,info);
-											}
-											
-										} catch (JSONException e) {
-											e.printStackTrace();
-										}
-									}
-									
+									ToastUtil.show(ResetPwdActivity.this,
+											"密码重置成功");
 								}
-							});				
-					
+							});
+					Intent it = new Intent(ResetPwdActivity.this,
+							BeginActivity.class);
+					startActivity(it);
+					this.finish();
 				}
 
 			} else {

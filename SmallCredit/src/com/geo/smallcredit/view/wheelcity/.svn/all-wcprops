@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/usvn/svn/SmallCredit/!svn/ver/85/trunk/SmallCredit/src/com/geo/smallcredit/view/wheelcity
+END
+WheelView.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/usvn/svn/SmallCredit/!svn/ver/85/trunk/SmallCredit/src/com/geo/smallcredit/view/wheelcity/WheelView.java
+END
+OnWheelClickedListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/usvn/svn/SmallCredit/!svn/ver/85/trunk/SmallCredit/src/com/geo/smallcredit/view/wheelcity/OnWheelClickedListener.java
+END
+AddressData.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/usvn/svn/SmallCredit/!svn/ver/85/trunk/SmallCredit/src/com/geo/smallcredit/view/wheelcity/AddressData.java
+END
+OnWheelScrollListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/usvn/svn/SmallCredit/!svn/ver/85/trunk/SmallCredit/src/com/geo/smallcredit/view/wheelcity/OnWheelScrollListener.java
+END
+ItemsRange.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/usvn/svn/SmallCredit/!svn/ver/85/trunk/SmallCredit/src/com/geo/smallcredit/view/wheelcity/ItemsRange.java
+END
+OnWheelChangedListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/usvn/svn/SmallCredit/!svn/ver/85/trunk/SmallCredit/src/com/geo/smallcredit/view/wheelcity/OnWheelChangedListener.java
+END
+WheelRecycle.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/usvn/svn/SmallCredit/!svn/ver/85/trunk/SmallCredit/src/com/geo/smallcredit/view/wheelcity/WheelRecycle.java
+END
+WheelScroller.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/usvn/svn/SmallCredit/!svn/ver/85/trunk/SmallCredit/src/com/geo/smallcredit/view/wheelcity/WheelScroller.java
+END
+WheelAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/usvn/svn/SmallCredit/!svn/ver/85/trunk/SmallCredit/src/com/geo/smallcredit/view/wheelcity/WheelAdapter.java
+END

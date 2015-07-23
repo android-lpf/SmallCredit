@@ -22,13 +22,11 @@ import com.geo.smallcredit.fragment.FinancialFragment;
 import com.geo.smallcredit.fragment.PersonalFragment;
 import com.geo.smallcredit.fragment.SelectFragment;
 import com.geo.smallcredit.interfaces.OnGetResultListener;
-import com.geo.smallcredit.util.SharedPreferencesUtils;
-import com.geo.smallcredit.util.ToastUtil;
 
 public class MainActivity extends FragmentActivity implements
 		android.view.View.OnClickListener, OnGetResultListener {
 
-	private RadioButton main_home, main_select, main_financial, main_personal;
+	private RadioButton main_select, main_financial, main_personal;
 
 	public static final int TAB_SELECTOR = 0;
 	public static final int TAB_FINAO = 1;
@@ -66,16 +64,13 @@ public class MainActivity extends FragmentActivity implements
 		} else if (id == 0) {
 			mPager.setCurrentItem(TAB_FINAO);
 			main_financial.setChecked(true);
-
 		} 
-//			else if (SharedPreferencesUtils.getString(MainActivity.this,
+//		else if (SharedPreferencesUtils.getString(MainActivity.this,
 //				"userid", null) != null) {
 //			Intent intent = new Intent(MainActivity.this,
 //					PasswordActivity.class);
 //			startActivity(intent);
 //		}
-
-
 	}
 
 	private void initView() {

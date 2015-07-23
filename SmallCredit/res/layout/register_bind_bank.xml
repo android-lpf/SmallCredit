@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/register_bind_bank_id"
     android:background="@color/backgroud_beijingse"
     android:orientation="vertical" >
 
@@ -10,6 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/backgroud_title" >
+
+        <Button
+            android:id="@+id/register_bind_bank_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/btn_general_back"
+            android:padding="10dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -37,224 +45,183 @@
             android:clickable="true"
             android:orientation="vertical" >
 
-            <ImageView
-                android:id="@+id/register_bind_bank_img"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:background="@drawable/register_san" />
-
-            <TextView
-                android:id="@+id/register_bind_bank_shuoming"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:maxLines="2"
-                android:text="为了保障您的账户安全,防止他人盗用您的信用信息,请通过绑定银行卡完成身份验证."
-                android:textColor="@color/black_zitise"
-                android:textSize="14sp" />
-
             <RelativeLayout
-                android:id="@+id/register_bind_bank_real1"
-                android:layout_width="match_parent"
-                android:layout_height="53dip"
-                android:background="#ffffff" >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="1dip"
-                    android:background="#DEDEDE" />
-
-                <TextView
-                    android:id="@+id/register_bind_bank_t1v"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:text="卡号:"
-                    android:textColor="@color/black_zitise"
-                    android:textSize="15sp" />
-
-                <EditText
-                    android:id="@+id/register_bind_bank_banknum_edit"
-                    android:layout_width="match_parent"
-                    android:layout_height="53dip"
-                    android:layout_toRightOf="@id/register_bind_bank_t1v"
-                    android:background="@null"
-                    android:hint="请输入您最近办理的银行卡"
-                    android:inputType="number"
-                    android:maxLength="20"
-                    android:maxLines="1"
-                    android:paddingLeft="5dp"
-                    android:textColor="@color/hint_yanse"
-                    android:textColorHint="@color/hint_yanse"
-                    android:textSize="15sp" />
-            </RelativeLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="1dip"
-                android:layout_marginBottom="10dp"
-                android:background="#DEDEDE" />
-
-            <RelativeLayout
-                android:id="@+id/register_bind_bank_real2"
-                android:layout_width="match_parent"
-                android:layout_height="53dip"
-                android:background="#ffffff" >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="1dip"
-                    android:background="#DEDEDE" />
-
-                <TextView
-                    android:id="@+id/register_bind_bank_t2v"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:text="卡类型:"
-                    android:textColor="@color/black_zitise"
-                    android:textSize="15sp" />
-
-                <TextView
-                    android:id="@+id/register_bind_bank_banktype"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_toRightOf="@id/register_bind_bank_t2v"
-                    android:paddingLeft="5dp"
-                    android:textColor="@color/orange"
-                    android:textSize="15sp" />
-            </RelativeLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="1dip"
-                android:layout_marginBottom="10dp"
-                android:background="#DEDEDE" />
-
-            <RelativeLayout
-                android:id="@+id/register_bind_bank_real3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffffff" >
+                android:background="@color/backgroud_beijingse" >
 
-                <TextView
+                <ImageView
+                    android:id="@+id/register_bind_bank_img"
                     android:layout_width="match_parent"
-                    android:layout_height="1dip"
-                    android:background="#DEDEDE" />
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/register_san" />
 
                 <TextView
-                    android:id="@+id/register_bind_bank_t3v"
+                    android:id="@+id/register_bind_bank_shuoming"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:text="银行预留手机:"
+                    android:layout_below="@id/register_bind_bank_img"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:maxLines="2"
+                    android:text="为了保障您的账户安全,防止他人盗用您的信用信息,请通过绑定银行卡完成身份验证."
                     android:textColor="@color/black_zitise"
-                    android:textSize="15sp" />
+                    android:textSize="14sp" />
 
-                <EditText
-                    android:id="@+id/register_bind_bank_phone_edit"
+                <RelativeLayout
+                    android:id="@+id/register_bind_bank_real1"
                     android:layout_width="match_parent"
-                    android:layout_height="53dip"
-                    android:layout_toRightOf="@id/register_bind_bank_t3v"
-                    android:background="@null"
-                    android:hint="请输入该银行卡对应的手机号码"
-                    android:inputType="number"
-                    android:maxLength="11"
-                    android:maxLines="1"
-                    android:paddingLeft="5dp"
-                    android:textColor="@color/hint_yanse"
-                    android:textColorHint="@color/hint_yanse"
-                    android:textSize="15sp" />
-            </RelativeLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="1dip"
-                android:layout_marginBottom="10dp"
-                android:background="#DEDEDE" />
-
-            <RelativeLayout
-                android:id="@+id/register_bind_bank_real4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#ffffff" >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="1dip"
-                    android:background="#DEDEDE" />
-
-                <TextView
-                    android:id="@+id/register_bind_bank_t4v"
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:text="验证码:"
-                    android:textColor="@color/black_zitise"
-                    android:textSize="15sp" />
+                    android:layout_below="@id/register_bind_bank_shuoming"
+                    android:layout_marginBottom="10dp" >
 
-                <EditText
-                    android:id="@+id/register_bind_bank_verify_edit"
-                    android:layout_width="wrap_content"
-                    android:layout_height="53dip"
-                    android:layout_toRightOf="@id/register_bind_bank_t4v"
-                    android:background="@null"
-                    android:gravity="center|left"
-                    android:hint="请输入验证码"
-                    android:inputType="number"
-                    android:maxLength="6"
-                    android:maxLines="1"
-                    android:paddingLeft="5dp"
-                    android:textColor="@color/hint_yanse"
-                    android:textColorHint="@color/hint_yanse"
-                    android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="卡号:"
+                        android:textColor="@color/black_zitise"
+                        android:textSize="15sp" />
 
-                <TextView
-                    android:id="@+id/register_bind_bank_t5v"
-                    android:layout_width="1dip"
-                    android:layout_height="53dip"
-                    android:layout_marginLeft="50dip"
-                    android:layout_toRightOf="@id/register_bind_bank_verify_edit"
-                    android:background="#DEDEDE" />
+                    <EditText
+                        android:id="@+id/register_bind_bank_banknum_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="53dip"
+                        android:background="@drawable/btn_white_zhijiaobiankuang"
+                        android:hint="请输入您最近办理的银行卡"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:paddingLeft="120dp"
+                        android:textColor="@color/hint_yanse"
+                        android:textColorHint="@color/hint_yanse"
+                        android:textCursorDrawable="@null"
+                        android:textSize="15sp" />
+                </RelativeLayout>
 
-                <com.geo.smallcredit.vo.TimeButton
-                    android:id="@+id/register_bind_bank_sendverifybtn"
+                <RelativeLayout
+                    android:id="@+id/register_bind_bank_real2"
                     android:layout_width="match_parent"
                     android:layout_height="53dip"
-                    android:layout_toRightOf="@id/register_bind_bank_t5v"
-                    android:background="@null"
-                    android:gravity="center"
-                    android:text="获取验证码"
-                    android:textColor="@color/orange"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                    android:layout_below="@id/register_bind_bank_real1"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn_white_zhijiaobiankuang" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="卡类型:"
+                        android:textColor="@color/black_zitise"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/register_bind_bank_banktype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="120dp"
+                        android:text="中国建设银行"
+                        android:textColor="@color/orange"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/register_bind_bank_real3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/register_bind_bank_real2"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="银行预留手机:"
+                        android:textColor="@color/black_zitise"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/register_bind_bank_phone_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="53dip"
+                        android:background="@drawable/btn_white_zhijiaobiankuang"
+                        android:hint="请输入该银行卡对应的手机号码"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:maxLines="1"
+                        android:paddingLeft="120dp"
+                        android:textColor="@color/hint_yanse"
+                        android:textColorHint="@color/hint_yanse"
+                        android:textCursorDrawable="@null"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/register_bind_bank_real4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/register_bind_bank_real3" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="验证码"
+                        android:textColor="@color/black_zitise"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/register_bind_bank_verify_edit"
+                        android:layout_width="215dp"
+                        android:layout_height="53dip"
+                        android:background="@drawable/btn_white_zhijiaobiankuang"
+                        android:hint="请输入验证码"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:maxLines="1"
+                        android:paddingLeft="120dp"
+                        android:textColor="@color/hint_yanse"
+                        android:textColorHint="@color/hint_yanse"
+                        android:textCursorDrawable="@null"
+                        android:textSize="15sp" />
+
+                    <com.geo.smallcredit.vo.TimeButton
+                        android:id="@+id/register_bind_bank_sendverifybtn"
+                        android:layout_width="100dip"
+                        android:layout_height="53dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="1dip"
+                        android:background="@drawable/btn_white_zhijiaobiankuang"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="获取验证码"
+                        android:textColor="@color/orange"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/register_bind_bank_finishbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/register_bind_bank_real4"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_huang_order"
+                    android:text="完成"
+                    android:textColor="@color/white" />
             </RelativeLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="1dip"
-                android:layout_marginBottom="10dp"
-                android:background="#DEDEDE" />
-
-            <Button
-                android:id="@+id/register_bind_bank_finishbtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="15dip"
-                android:background="@drawable/button_huang_order"
-                android:text="完成"
-                android:textColor="@color/white" />
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>

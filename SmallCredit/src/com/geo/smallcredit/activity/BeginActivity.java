@@ -72,7 +72,7 @@ public class BeginActivity extends Activity implements OnClickListener {
 
 		switch (arg0.getId()) {
 		case R.id.login_to_reg:
-			Intent to_reg=new Intent(BeginActivity.this,RegisterYiActivity.class);
+			Intent to_reg=new Intent(BeginActivity.this,RegisterActivity.class);
 			startActivity(to_reg);
 			break;
 		case R.id.traceroute_rootview:
@@ -84,7 +84,7 @@ public class BeginActivity extends Activity implements OnClickListener {
 			final String username_str = login_username.getText().toString().trim();
 			final String userpaw_str = login_userpaw.getText().toString().trim();
 
-			String mpaw = MD5Util.string2MD5(userpaw_str);
+//			String mpaw = MD5Util.string2MD5(userpaw_str);
 
 			int netWorkType = CommonUtil.isNetworkAvailable(BeginActivity.this);
 
@@ -107,7 +107,7 @@ public class BeginActivity extends Activity implements OnClickListener {
 
 					AjaxParams params = new AjaxParams();
 					params.put("phone", username_str);
-					params.put("password", mpaw);
+					params.put("password", userpaw_str);
 					FinalHttp fh = new FinalHttp();
 
 					fh.post(InternetURL.USER_LOGIN, params,
@@ -128,13 +128,9 @@ public class BeginActivity extends Activity implements OnClickListener {
 										mBaseBean=GsonUtils.fromJson(t.toString(), BaseBean.class);
 										if(mBaseBean.getCode()==200){
 											ToastUtil.show(BeginActivity.this,mBaseBean.getInfo());
-											SharedPreferencesUtils.saveString(BeginActivity.this,"token", mBaseBean.getToken());
-											SharedPreferencesUtils.saveString(BeginActivity.this,"phone", mBaseBean.getPhone());
-											SharedPreferencesUtils.saveString(BeginActivity.this,"userid", mBaseBean.getUserid());
 											Intent main_activity_intent=new Intent(BeginActivity.this,MainActivity.class);
 											startActivity(main_activity_intent);
-										}
-										else{
+										}else{
 											ToastUtil.show(BeginActivity.this,mBaseBean.getInfo());
 										}
 									}

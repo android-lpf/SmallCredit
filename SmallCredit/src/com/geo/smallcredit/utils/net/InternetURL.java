@@ -6,24 +6,18 @@ public class InternetURL {
    //public static String URL = "http://api.xiaoxinyong.com";
 	
 	//内网服务器
-	public static String URL = "http://10.65.113.37";
+	public static String URL = "http://10.65.113.55";
+	
+	
+	
 	//用户登录POST
 	public static String USER_LOGIN=URL+"/project/index.php/Rest/Reg/login";
-	// 短信验证 post请求
+	// 短信验证 get请求
+
 	public static String CHECKPHONE = URL + "/project/index.php/rest/Reg/mescode";
+	
 	//用户注册POST
 	public static String USER_REGISTER=URL+"/project/index.php/Rest/Reg/reg";
-	//判断银行卡名称POST
-	public static String USER_YANBANK=URL+"/project/index.php/Rest/User/bankinfo";
-	//获取银行验证码 post
-	public static String BANK_NUMBER=URL+"/project/index.php/Rest/User/binding";
-	//完成绑卡POST
-	public static String BIND_BANK=URL+"/project/index.php/Rest/User/binding_advance";
-	//验证码是否可用 找回密码用POST
-	public static String CHECK_PHONE_NUMBER=URL+"/project/index.php/rest/Reg/iscode";
-	//忘记密码post
-	public static String CHECK_FORGETPWD = URL+"/project/index.php/Rest/Reg/retpwd";
-	
 	
 	
 	/***
@@ -61,6 +55,13 @@ public class InternetURL {
 	public static String CHECK_relationship = URL
 			+ "/xiaoxinyong/rest/users/contact_check_post";
 
+	/**
+	 * 忘记密码 密码：password
+	 * 
+	 * IMEI：imei
+	 */
+	public static String CHECK_FORGETPWD = URL
+			+ "/xiaoxinyong/rest/users/changpass";
 
 	/***
 	 * 用户身份验证_更新 POST POST

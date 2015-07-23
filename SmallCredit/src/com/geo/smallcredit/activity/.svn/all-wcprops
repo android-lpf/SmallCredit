@@ -1,0 +1,539 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/usvn/svn/SmallCredit/!svn/ver/169/trunk/SmallCredit/src/com/geo/smallcredit/activity
+END
+House_Activity.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/usvn/svn/SmallCredit/!svn/ver/103/trunk/SmallCredit/src/com/geo/smallcredit/activity/House_Activity.java
+END
+BindMobileActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/usvn/svn/SmallCredit/!svn/ver/150/trunk/SmallCredit/src/com/geo/smallcredit/activity/BindMobileActivity.java
+END
+CarCredit_ApplicationActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/usvn/svn/SmallCredit/!svn/ver/99/trunk/SmallCredit/src/com/geo/smallcredit/activity/CarCredit_ApplicationActivity.java
+END
+MySecurepaymentDepositActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/MySecurepaymentDepositActivity.java
+END
+Mypayment_info_xieyiActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/Mypayment_info_xieyiActivity.java
+END
+MySecurepaymentTranscationActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/usvn/svn/SmallCredit/!svn/ver/158/trunk/SmallCredit/src/com/geo/smallcredit/activity/MySecurepaymentTranscationActivity.java
+END
+MySecurepaymentDespoitResultActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/MySecurepaymentDespoitResultActivity.java
+END
+BankTypeActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/usvn/svn/SmallCredit/!svn/ver/30/trunk/SmallCredit/src/com/geo/smallcredit/activity/BankTypeActivity.java
+END
+MyMouthPaymentPlanActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/usvn/svn/SmallCredit/!svn/ver/105/trunk/SmallCredit/src/com/geo/smallcredit/activity/MyMouthPaymentPlanActivity.java
+END
+MypaymentBangXieyiActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/MypaymentBangXieyiActivity.java
+END
+MyTificationBankActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/usvn/svn/SmallCredit/!svn/ver/79/trunk/SmallCredit/src/com/geo/smallcredit/activity/MyTificationBankActivity.java
+END
+MyAddBankActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/usvn/svn/SmallCredit/!svn/ver/130/trunk/SmallCredit/src/com/geo/smallcredit/activity/MyAddBankActivity.java
+END
+MySecurepaymentInfoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/MySecurepaymentInfoActivity.java
+END
+Laifenqi_ShuomingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/usvn/svn/SmallCredit/!svn/ver/158/trunk/SmallCredit/src/com/geo/smallcredit/activity/Laifenqi_ShuomingActivity.java
+END
+MeansUploadActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/usvn/svn/SmallCredit/!svn/ver/78/trunk/SmallCredit/src/com/geo/smallcredit/activity/MeansUploadActivity.java
+END
+My_MyInformationActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/usvn/svn/SmallCredit/!svn/ver/158/trunk/SmallCredit/src/com/geo/smallcredit/activity/My_MyInformationActivity.java
+END
+DaiActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/usvn/svn/SmallCredit/!svn/ver/95/trunk/SmallCredit/src/com/geo/smallcredit/activity/DaiActivity.java
+END
+BangbankTwoXieyiActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/BangbankTwoXieyiActivity.java
+END
+HouseCreditApplication_jiekuan_Activity.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/usvn/svn/SmallCredit/!svn/ver/100/trunk/SmallCredit/src/com/geo/smallcredit/activity/HouseCreditApplication_jiekuan_Activity.java
+END
+BeginActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/usvn/svn/SmallCredit/!svn/ver/168/trunk/SmallCredit/src/com/geo/smallcredit/activity/BeginActivity.java
+END
+XingBaoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/usvn/svn/SmallCredit/!svn/ver/90/trunk/SmallCredit/src/com/geo/smallcredit/activity/XingBaoActivity.java
+END
+ReviseTransactionActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/usvn/svn/SmallCredit/!svn/ver/158/trunk/SmallCredit/src/com/geo/smallcredit/activity/ReviseTransactionActivity.java
+END
+MySecurepaymentRechargeFailResultActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/usvn/svn/SmallCredit/!svn/ver/81/trunk/SmallCredit/src/com/geo/smallcredit/activity/MySecurepaymentRechargeFailResultActivity.java
+END
+RegisterActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/usvn/svn/SmallCredit/!svn/ver/168/trunk/SmallCredit/src/com/geo/smallcredit/activity/RegisterActivity.java
+END
+Mysecurepayment_addbankActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/Mysecurepayment_addbankActivity.java
+END
+RegisterBindbankActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/usvn/svn/SmallCredit/!svn/ver/168/trunk/SmallCredit/src/com/geo/smallcredit/activity/RegisterBindbankActivity.java
+END
+PasswordActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/usvn/svn/SmallCredit/!svn/ver/158/trunk/SmallCredit/src/com/geo/smallcredit/activity/PasswordActivity.java
+END
+WebViewActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/usvn/svn/SmallCredit/!svn/ver/158/trunk/SmallCredit/src/com/geo/smallcredit/activity/WebViewActivity.java
+END
+MySecurepaymentRechargeSussessResultActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/usvn/svn/SmallCredit/!svn/ver/78/trunk/SmallCredit/src/com/geo/smallcredit/activity/MySecurepaymentRechargeSussessResultActivity.java
+END
+BankInfoNewActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/BankInfoNewActivity.java
+END
+MyCreditRecordActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/usvn/svn/SmallCredit/!svn/ver/61/trunk/SmallCredit/src/com/geo/smallcredit/activity/MyCreditRecordActivity.java
+END
+PersonActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/usvn/svn/SmallCredit/!svn/ver/90/trunk/SmallCredit/src/com/geo/smallcredit/activity/PersonActivity.java
+END
+MoreActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/usvn/svn/SmallCredit/!svn/ver/158/trunk/SmallCredit/src/com/geo/smallcredit/activity/MoreActivity.java
+END
+RegisterYiActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/usvn/svn/SmallCredit/!svn/ver/168/trunk/SmallCredit/src/com/geo/smallcredit/activity/RegisterYiActivity.java
+END
+SuccessShenqingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/usvn/svn/SmallCredit/!svn/ver/90/trunk/SmallCredit/src/com/geo/smallcredit/activity/SuccessShenqingActivity.java
+END
+XingbaoCredit_ApplicationActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/usvn/svn/SmallCredit/!svn/ver/99/trunk/SmallCredit/src/com/geo/smallcredit/activity/XingbaoCredit_ApplicationActivity.java
+END
+RegisterShouquanActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/usvn/svn/SmallCredit/!svn/ver/165/trunk/SmallCredit/src/com/geo/smallcredit/activity/RegisterShouquanActivity.java
+END
+ResetPwdActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/usvn/svn/SmallCredit/!svn/ver/168/trunk/SmallCredit/src/com/geo/smallcredit/activity/ResetPwdActivity.java
+END
+SelectFrationActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/SelectFrationActivity.java
+END
+AboutActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/usvn/svn/SmallCredit/!svn/ver/158/trunk/SmallCredit/src/com/geo/smallcredit/activity/AboutActivity.java
+END
+TravelItemActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/usvn/svn/SmallCredit/!svn/ver/132/trunk/SmallCredit/src/com/geo/smallcredit/activity/TravelItemActivity.java
+END
+XiaofeiActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/usvn/svn/SmallCredit/!svn/ver/158/trunk/SmallCredit/src/com/geo/smallcredit/activity/XiaofeiActivity.java
+END
+MySecurepaymentRechargeActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/usvn/svn/SmallCredit/!svn/ver/164/trunk/SmallCredit/src/com/geo/smallcredit/activity/MySecurepaymentRechargeActivity.java
+END
+HouseCredit_ApplicationActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/usvn/svn/SmallCredit/!svn/ver/94/trunk/SmallCredit/src/com/geo/smallcredit/activity/HouseCredit_ApplicationActivity.java
+END
+HouseCreditDetailsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/usvn/svn/SmallCredit/!svn/ver/90/trunk/SmallCredit/src/com/geo/smallcredit/activity/HouseCreditDetailsActivity.java
+END
+MainShowfenInfoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/usvn/svn/SmallCredit/!svn/ver/168/trunk/SmallCredit/src/com/geo/smallcredit/activity/MainShowfenInfoActivity.java
+END
+ReviseLoginPaw.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/usvn/svn/SmallCredit/!svn/ver/158/trunk/SmallCredit/src/com/geo/smallcredit/activity/ReviseLoginPaw.java
+END
+Pinganyidai_ShuomingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/usvn/svn/SmallCredit/!svn/ver/158/trunk/SmallCredit/src/com/geo/smallcredit/activity/Pinganyidai_ShuomingActivity.java
+END
+MySecurePaymentActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/usvn/svn/SmallCredit/!svn/ver/164/trunk/SmallCredit/src/com/geo/smallcredit/activity/MySecurePaymentActivity.java
+END
+MyCreditpayActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/MyCreditpayActivity.java
+END
+ZhongChengXin_xieyiActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/ZhongChengXin_xieyiActivity.java
+END
+XinbaoCreditpayment_JieActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/usvn/svn/SmallCredit/!svn/ver/100/trunk/SmallCredit/src/com/geo/smallcredit/activity/XinbaoCreditpayment_JieActivity.java
+END
+HomeStartupActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/usvn/svn/SmallCredit/!svn/ver/59/trunk/SmallCredit/src/com/geo/smallcredit/activity/HomeStartupActivity.java
+END
+MyMessageActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/usvn/svn/SmallCredit/!svn/ver/158/trunk/SmallCredit/src/com/geo/smallcredit/activity/MyMessageActivity.java
+END
+ShowSelectFractionActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/ShowSelectFractionActivity.java
+END
+MyAddpaymentPlanActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/MyAddpaymentPlanActivity.java
+END
+MainActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/usvn/svn/SmallCredit/!svn/ver/169/trunk/SmallCredit/src/com/geo/smallcredit/activity/MainActivity.java
+END
+LvShenqingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/usvn/svn/SmallCredit/!svn/ver/94/trunk/SmallCredit/src/com/geo/smallcredit/activity/LvShenqingActivity.java
+END
+Paipaidai_ShuomingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/usvn/svn/SmallCredit/!svn/ver/158/trunk/SmallCredit/src/com/geo/smallcredit/activity/Paipaidai_ShuomingActivity.java
+END
+RegisterSecondActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/usvn/svn/SmallCredit/!svn/ver/168/trunk/SmallCredit/src/com/geo/smallcredit/activity/RegisterSecondActivity.java
+END
+MyBankInfoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/usvn/svn/SmallCredit/!svn/ver/90/trunk/SmallCredit/src/com/geo/smallcredit/activity/MyBankInfoActivity.java
+END
+ShenFenActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/usvn/svn/SmallCredit/!svn/ver/105/trunk/SmallCredit/src/com/geo/smallcredit/activity/ShenFenActivity.java
+END
+MySelectorProgressSureActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/usvn/svn/SmallCredit/!svn/ver/72/trunk/SmallCredit/src/com/geo/smallcredit/activity/MySelectorProgressSureActivity.java
+END
+BangbankThreeActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/BangbankThreeActivity.java
+END
+MyProgressselector_StateActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/MyProgressselector_StateActivity.java
+END
+SecondSureActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/usvn/svn/SmallCredit/!svn/ver/109/trunk/SmallCredit/src/com/geo/smallcredit/activity/SecondSureActivity.java
+END
+JieActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/usvn/svn/SmallCredit/!svn/ver/158/trunk/SmallCredit/src/com/geo/smallcredit/activity/JieActivity.java
+END
+MyBillPayDetailActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/MyBillPayDetailActivity.java
+END
+MySelectorProgressInfoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/MySelectorProgressInfoActivity.java
+END
+SuggestionActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/usvn/svn/SmallCredit/!svn/ver/158/trunk/SmallCredit/src/com/geo/smallcredit/activity/SuggestionActivity.java
+END
+FindPwdActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/usvn/svn/SmallCredit/!svn/ver/168/trunk/SmallCredit/src/com/geo/smallcredit/activity/FindPwdActivity.java
+END
+Bankinfo_UserxieyiActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/Bankinfo_UserxieyiActivity.java
+END
+WelcomActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/usvn/svn/SmallCredit/!svn/ver/168/trunk/SmallCredit/src/com/geo/smallcredit/activity/WelcomActivity.java
+END
+IntroduceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/usvn/svn/SmallCredit/!svn/ver/110/trunk/SmallCredit/src/com/geo/smallcredit/activity/IntroduceActivity.java
+END
+Jiafenqi_ShuomingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/usvn/svn/SmallCredit/!svn/ver/158/trunk/SmallCredit/src/com/geo/smallcredit/activity/Jiafenqi_ShuomingActivity.java
+END
+CarBankInfoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/usvn/svn/SmallCredit/!svn/ver/130/trunk/SmallCredit/src/com/geo/smallcredit/activity/CarBankInfoActivity.java
+END
+Bangbank_two_Activity.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/Bangbank_two_Activity.java
+END
+ZhongZhiCheng_xieyiActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/ZhongZhiCheng_xieyiActivity.java
+END
+LianxiActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/usvn/svn/SmallCredit/!svn/ver/103/trunk/SmallCredit/src/com/geo/smallcredit/activity/LianxiActivity.java
+END
+CarCreditDetailsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/usvn/svn/SmallCredit/!svn/ver/90/trunk/SmallCredit/src/com/geo/smallcredit/activity/CarCreditDetailsActivity.java
+END
+bangBankActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/bangBankActivity.java
+END
+MyBillActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/MyBillActivity.java
+END
+Huchi_shuoming_Activity.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/usvn/svn/SmallCredit/!svn/ver/158/trunk/SmallCredit/src/com/geo/smallcredit/activity/Huchi_shuoming_Activity.java
+END
+KaoLa_xiyiActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/KaoLa_xiyiActivity.java
+END
+WorkActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/usvn/svn/SmallCredit/!svn/ver/103/trunk/SmallCredit/src/com/geo/smallcredit/activity/WorkActivity.java
+END
+CreditpayActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/CreditpayActivity.java
+END
+MyPaymentPlanActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/usvn/svn/SmallCredit/!svn/ver/159/trunk/SmallCredit/src/com/geo/smallcredit/activity/MyPaymentPlanActivity.java
+END
+CarCreaitpayment_JieActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/usvn/svn/SmallCredit/!svn/ver/102/trunk/SmallCredit/src/com/geo/smallcredit/activity/CarCreaitpayment_JieActivity.java
+END
+MySelectorProgressGiveupBecauseActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/usvn/svn/SmallCredit/!svn/ver/100/trunk/SmallCredit/src/com/geo/smallcredit/activity/MySelectorProgressGiveupBecauseActivity.java
+END

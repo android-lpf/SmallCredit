@@ -4,13 +4,16 @@ public class ThirdMain {
 	private int img;
 	private String name;
 	private String info;
+	private String information;
 	private int front;
 
-	public ThirdMain(int img, String name, String info, int front) {
+	public ThirdMain(int img, String name, String info, String information,
+			int front) {
 		super();
 		this.img = img;
 		this.name = name;
 		this.info = info;
+		this.information = information;
 		this.front = front;
 	}
 
@@ -40,6 +43,14 @@ public class ThirdMain {
 
 	public void setInfo(String info) {
 		this.info = info;
+	}
+
+	public String getInformation() {
+		return information;
+	}
+
+	public void setInformation(String information) {
+		this.information = information;
 	}
 
 	public int getFront() {

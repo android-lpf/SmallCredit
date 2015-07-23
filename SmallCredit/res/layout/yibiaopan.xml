@@ -2,32 +2,72 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/second_main_showfen_backgroud"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:background="@null"
+         >
 
         <ImageView
             android:id="@+id/yibiaopan_img"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:layout_marginLeft="42dp"
-            android:layout_marginRight="42dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/zhongzhicheng_yibiaopan" />
-
-        <ImageView
-            android:id="@+id/yibiaopan_zhizhen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/yibiaopan_img"
-            android:layout_alignLeft="@+id/yibiaopan_img"
-            android:layout_marginLeft="25dp"
-            android:background="@drawable/yibiaopan_zhizhen" />
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/zhongzhicheng_yibiaopan" />
+
+		<TextView
+		    android:id="@+id/yibiaopan_showfen"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:text="701"
+		    android:textColor="@color/lvse_ziti"
+		    android:textSize="50sp" 
+		    android:textStyle="bold"
+		    />
+
+		<TextView
+		    android:id="@+id/yibiaopan_gride"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/yibiaopan_showfen"
+		    android:layout_centerHorizontal="true"
+		    android:text="信用良好"
+		    android:textColor="@color/lvse_ziti"
+		    android:textSize="20sp"
+		    android:textStyle="bold" 
+		    android:layout_marginTop="60dp"
+		    />
+		<TextView 
+		     android:id="@+id/yibiaopan_time"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="评估时间：2015.07.10"
+		     android:textColor="@color/danhui"
+		    android:textSize="12sp"
+		    android:textStyle="bold" 
+		    android:layout_centerHorizontal="true"
+			android:layout_marginBottom="20dp"
+			android:layout_marginTop="10dp"
+		    android:layout_below="@id/yibiaopan_gride"
+		    />
+
+		<ImageView
+		    android:id="@+id/yibiaopan_zhizhen"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@id/yibiaopan_img"
+		    android:layout_alignLeft="@id/yibiaopan_img"
+		    android:background="@drawable/yibiaopan_zhizhen" />
 
     </RelativeLayout>
-
 </LinearLayout>
